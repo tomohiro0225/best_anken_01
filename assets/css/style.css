@@ -53,16 +53,77 @@ table {
 }
 
 .l-footer {
-  text-align: center;
+  width: 100%;
+}
+.l-footer__container {
+  height: 120px;
+}
+.l-footer__container__inner {
+  max-width: 1198px;
   margin: 0 auto;
-  padding: 30px 0;
-  background-color: #0088a2;
-  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.l-footer__container:last-child {
+  height: 50px;
+}
+.l-footer__logo {
+  line-height: 80px;
+}
+.l-footer__navi {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(0%, 0%);
+}
+.l-footer__navi__items {
+  display: flex;
+  margin-bottom: 12px;
+}
+.l-footer__navi__item {
+  margin-right: 40px;
+  height: 100%;
+}
+.l-footer__navi__item a {
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  text-align: left;
   color: #fff;
 }
-.l-footer__copyright {
-  padding: 10px;
-  font-weight: bold;
+.l-footer__navi__item:last-child {
+  margin-right: 0;
+}
+.l-footer__poricy {
+  font-family: Karla;
+  font-weight: normal;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  margin: 16px 0 0 12px;
+  color: #fff;
+  display: inline;
+}
+.l-footer__copywriter {
+  font-family: Karla;
+  font-weight: normal;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #000;
+  line-height: 50px;
+}
+.l-footer__icons {
+  display: flex;
+  line-height: 43px;
+}
+.l-footer__icon {
+  width: 35px;
+  height: 35px;
+  padding-right: 10px;
+}
+.l-footer__icon:last-child {
+  padding-right: 0px;
 }
 
 .l-contact {
@@ -187,6 +248,10 @@ li {
 
 .font {
   font-family: Oswald;
+}
+
+.bg-black {
+  background-color: #1B1B1D;
 }
 
 .menu-tirgger {
