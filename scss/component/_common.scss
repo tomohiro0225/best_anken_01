@@ -30,11 +30,8 @@ li{
 .bg-gray{
     background-color: #5B5B5D;
 }
-// 文字色
-.font-black{
-    color: #000;
-}
 
+// conponent
 .c-sectionTitle{
     text-align: left;
     margin-bottom: 50px;
@@ -58,7 +55,7 @@ li{
     border: solid 2px #000;
     position: relative;
     background-color: #fff;
-    margin: 0 auto;
+    margin: 50px auto 0px;
     a{
         display: block;
         position: absolute;

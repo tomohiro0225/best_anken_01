@@ -1,0 +1,55 @@
+.works {
+    .c-sectionTitle__txt{
+        color: #000;
+    }
+    &__lists {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__list {
+        width: calc(100% / 2 + 1%);
+        margin-right: 2%;
+    }
+    &__list:last-child {
+        margin-right: 0;
+    }
+    &__list__img {
+        position: relative;
+    }
+    &__list--new {
+        font-family: Oswald;
+        font-weight: bold;
+        font-size: 15px;
+        letter-spacing: 0.05em;
+        text-align: left;
+        color: #fff;
+        padding: 3px 12px;
+        background-color: black;
+        display: inline;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    &__list__cap {
+        background-color: #39393C;
+    }
+    &__list__name {
+        font-weight: bold;
+        font-size: 19px;
+        letter-spacing: 0.1em;
+        text-align: left;
+        color: #fff;
+        padding: 20px 25px 0px;
+    }
+    &__list__text {
+        font-weight: normal;
+        font-size: 14px;
+        letter-spacing: 0.1em;
+        line-height: 24px;
+        text-align: left;
+        color: #fff;
+        padding: 16px 25px 28px;
+    }
+}
+
+

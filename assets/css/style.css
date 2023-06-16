@@ -261,10 +261,6 @@ li {
   background-color: #5B5B5D;
 }
 
-.font-black {
-  color: #000;
-}
-
 .c-sectionTitle {
   text-align: left;
   margin-bottom: 50px;
@@ -289,7 +285,7 @@ li {
   border: solid 2px #000;
   position: relative;
   background-color: #fff;
-  margin: 0 auto;
+  margin: 50px auto 0px;
 }
 .c-btn a {
   display: block;
@@ -359,7 +355,6 @@ li {
   line-height: 28px;
   text-align: left;
   color: #000;
-  margin-bottom: 50px;
 }
 
 .service .l-section {
@@ -368,10 +363,61 @@ li {
 .service__lists {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 50px;
 }
 .service__list {
   width: 20%;
+}
+
+.works .c-sectionTitle__txt {
+  color: #000;
+}
+.works__lists {
+  display: flex;
+  justify-content: space-between;
+}
+.works__list {
+  width: 51%;
+  margin-right: 2%;
+}
+.works__list:last-child {
+  margin-right: 0;
+}
+.works__list__img {
+  position: relative;
+}
+.works__list--new {
+  font-family: Oswald;
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #fff;
+  padding: 3px 12px;
+  background-color: black;
+  display: inline;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.works__list__cap {
+  background-color: #39393C;
+}
+.works__list__name {
+  font-weight: bold;
+  font-size: 19px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #fff;
+  padding: 20px 25px 0px;
+}
+.works__list__text {
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  line-height: 24px;
+  text-align: left;
+  color: #fff;
+  padding: 16px 25px 28px;
 }
 
 .topVisual {
