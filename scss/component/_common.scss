@@ -36,10 +36,34 @@ li{
     text-align: left;
     margin-bottom: 50px;
     &__ttl{
-        width: auto;
-        height: 37px;
+        width: max-content;
         margin-bottom: 25px;
-        display: block;
+        display: flex;
+        height: 37px;
+        img{
+            display: block;
+            padding: 0 15px;
+        }
+    }
+    &__ttl::before{
+      content: '';
+      flex-grow: 1;/* 余白を分け与える */
+      height: 1px;
+      background: #000000;
+      display: block;
+      width: 70px;
+      position: relative;
+      top: 50%;
+    }
+    &__ttl::after {
+      content: 'text';
+      color: #000;
+      font-size: 16px;
+      font-weight: bold;
+      width: 200px;
+      position: relative;
+      top: 50%;
+      transform: translateY(-20%);
     }
     &__txt{
         font-size: 16px;

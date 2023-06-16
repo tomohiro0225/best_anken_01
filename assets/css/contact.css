@@ -65,7 +65,7 @@
   border-left: none;
 }
 .l-contact__btn {
-  width: 286px;
+  max-width: 286px;
   background: #000000;
   margin: 67px auto 22px;
 }
@@ -82,7 +82,7 @@
   border: 1px solid #707070;
   margin: 0 auto;
   padding: 20px 0px;
-  width: 264px;
+  width: calc(100% - 22px);
   height: calc(100% - 4px);
 }
 /*# sourceMappingURL=contact.css.map */

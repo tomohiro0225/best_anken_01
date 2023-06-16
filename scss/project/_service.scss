@@ -1,4 +1,14 @@
 .service {
+    .c-sectionTitle{
+        &__ttl::before{
+          content: '';
+          background: #fff;
+        }
+        &__ttl::after {
+          content: '事業案内';
+          color: #fff;
+        }
+    }
     .l-section{
         padding: 100px 20px 50px;
     }

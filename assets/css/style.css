@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -68,6 +69,7 @@ table {
   height: 50px;
   display: flex;
   justify-content: space-between;
+  top: 50%;
 }
 .l-footer__logo {
   height: 40px;
@@ -193,7 +195,7 @@ table {
   border-left: none;
 }
 .l-contact__btn {
-  width: 286px;
+  max-width: 286px;
   background: #000000;
   margin: 67px auto 22px;
 }
@@ -210,7 +212,7 @@ table {
   border: 1px solid #707070;
   margin: 0 auto;
   padding: 20px 0px;
-  width: 264px;
+  width: calc(100% - 22px);
   height: calc(100% - 4px);
 }
 
@@ -218,7 +220,7 @@ table {
   margin: 0px auto;
   padding: 100px 20px;
   text-align: center;
-  max-width: 1240px;
+  max-width: 1200px;
 }
 
 html {
@@ -266,10 +268,36 @@ li {
   margin-bottom: 50px;
 }
 .c-sectionTitle__ttl {
-  width: auto;
-  height: 37px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   margin-bottom: 25px;
+  display: flex;
+  height: 37px;
+}
+.c-sectionTitle__ttl img {
   display: block;
+  padding: 0 15px;
+}
+.c-sectionTitle__ttl::before {
+  content: "";
+  flex-grow: 1; /* 余白を分け与える */
+  height: 1px;
+  background: #000000;
+  display: block;
+  width: 70px;
+  position: relative;
+  top: 50%;
+}
+.c-sectionTitle__ttl::after {
+  content: "text";
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  width: 200px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-20%);
 }
 .c-sectionTitle__txt {
   font-size: 16px;
@@ -330,6 +358,9 @@ li {
 .concept .c-sectionTitle__ttl {
   margin-bottom: 50px;
 }
+.concept .c-sectionTitle__ttl::after {
+  content: "コンセプト";
+}
 .concept__wrapper {
   display: flex;
   justify-content: space-between;
@@ -357,6 +388,14 @@ li {
   color: #000;
 }
 
+.service .c-sectionTitle__ttl::before {
+  content: "";
+  background: #fff;
+}
+.service .c-sectionTitle__ttl::after {
+  content: "事業案内";
+  color: #fff;
+}
 .service .l-section {
   padding: 100px 20px 50px;
 }
@@ -368,6 +407,9 @@ li {
   width: 20%;
 }
 
+.works .c-sectionTitle__ttl::after {
+  content: "実績紹介";
+}
 .works .c-sectionTitle__txt {
   color: #000;
 }
@@ -420,12 +462,20 @@ li {
   padding: 16px 25px 28px;
 }
 
+.member .c-sectionTitle__ttl::before {
+  content: "";
+  background: #fff;
+}
+.member .c-sectionTitle__ttl::after {
+  content: "メンバー紹介";
+  color: #fff;
+}
+
 .topVisual {
   background-image: url(/img/topVisual.png);
   background-position: right;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
   height: 100vh;
   position: relative;
   padding: 0 20px;

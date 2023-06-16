@@ -4,6 +4,9 @@
         &__ttl{
             margin-bottom: 50px;
         }
+        &__ttl::after {
+          content: 'コンセプト';
+        }
     }
     &__wrapper {
         display: flex;

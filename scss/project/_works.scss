@@ -1,6 +1,10 @@
 .works {
+    .c-sectionTitle__ttl::after {
+        content: '実績紹介';
+      }
     .c-sectionTitle__txt{
         color: #000;
+        
     }
     &__lists {
         display: flex;

@@ -1,0 +1,12 @@
+.member{
+    .c-sectionTitle{
+        &__ttl::before{
+          content: '';
+          background: #fff;
+        }
+        &__ttl::after {
+          content: 'メンバー紹介';
+          color: #fff;
+        }
+    }
+}
