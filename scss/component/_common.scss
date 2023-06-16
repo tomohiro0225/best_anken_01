@@ -20,8 +20,56 @@ li{
 .font{
     font-family: Oswald;
 }
+// 背景色
 .bg-black{
     background-color: #1B1B1D;
+}
+.bg-darkgray{
+    background-color: #39393C;
+}
+.bg-gray{
+    background-color: #5B5B5D;
+}
+// 文字色
+.font-black{
+    color: #000;
+}
+
+.c-sectionTitle{
+    text-align: left;
+    margin-bottom: 50px;
+    &__ttl{
+        width: auto;
+        height: 37px;
+        margin-bottom: 25px;
+        display: block;
+    }
+    &__txt{
+        font-size: 16px;
+        letter-spacing: 0.15em;
+        line-height: 24px;
+        text-align: right;
+        color: #fff;
+    }
+}
+.c-btn{
+    width: 228px;
+    height: 60px;
+    border: solid 2px #000;
+    position: relative;
+    background-color: #fff;
+    margin: 0 auto;
+    a{
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+        font-weight: bold;
+        width: 100%;
+        color: #2D2D2D;
+    }
 }
 
 .menu-tirgger{

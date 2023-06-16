@@ -1,0 +1,36 @@
+.concept {
+    .c-sectionTitle{
+        margin-bottom: 0px;
+        &__ttl{
+            margin-bottom: 50px;
+        }
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {
+        width: calc(100% / 3 + 7%);
+        font-weight: bold;
+        font-size: 40px;
+        letter-spacing: 0.15em;
+        line-height: 60px;
+        text-align: left;
+        color: #1b1b1d;
+        margin-right: 7%;
+    }
+    &__text {
+        width: calc(100% / 3 * 2);
+        p{
+            font-family: "BIZ UDPGothic";
+            font-weight: normal;
+            font-size: 16px;
+            letter-spacing: 0.1em;
+            line-height: 28px;
+            text-align: left;
+            color: #000;
+            margin-bottom: 50px;
+        }
+    }
+}
+

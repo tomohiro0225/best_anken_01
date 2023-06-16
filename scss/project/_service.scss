@@ -1,0 +1,13 @@
+.service {
+    .l-section{
+        padding: 100px 20px 50px;
+    }
+    &__lists {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+    &__list {
+        width: 20%;
+    }
+}
