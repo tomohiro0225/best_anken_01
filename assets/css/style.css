@@ -55,27 +55,27 @@ table {
 .l-footer {
   width: 100%;
 }
-.l-footer__container {
-  height: 120px;
-}
-.l-footer__container__inner {
-  max-width: 1198px;
+.l-footer__up {
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
+  padding: 20px 0;
   justify-content: space-between;
-  position: relative;
 }
-.l-footer__container:last-child {
+.l-footer__down {
+  max-width: 1200px;
+  margin: 0 auto;
   height: 50px;
+  display: flex;
+  justify-content: space-between;
 }
 .l-footer__logo {
-  line-height: 80px;
+  height: 40px;
+  width: 320px;
 }
-.l-footer__navi {
-  position: absolute;
-  top: 50%;
-  right: 0%;
-  transform: translate(0%, 0%);
+.l-footer__logo a {
+  width: 100%;
+  display: block;
 }
 .l-footer__navi__items {
   display: flex;

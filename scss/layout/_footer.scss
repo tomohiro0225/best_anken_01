@@ -1,26 +1,26 @@
 .l-footer {
     width: 100%;
-    &__container {
-        height: 120px;
-        &__inner{
-            max-width: 1198px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            position: relative;
-        }
+    &__up{
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        padding: 20px 0;
+        justify-content: space-between;
     }
-    &__container:last-child {
+    &__down {
+        max-width: 1200px;
+        margin: 0 auto;
         height: 50px;
+        display: flex;
+        justify-content: space-between;
     }
     &__logo {
-        line-height: 80px;
-    }
-    &__navi{
-        position: absolute;
-        top: 50%;
-        right: 0%;
-        transform: translate(0%, 0%);
+        height: 40px;
+        width: 320px;
+        a{
+            width: 100%;
+            display: block;
+        }
     }
     &__navi__items {
         display: flex;
