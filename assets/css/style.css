@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -284,7 +283,7 @@ li {
 }
 .c-sectionTitle__ttl::before {
   content: "";
-  flex-grow: 1; /* 余白を分け与える */
+  flex-grow: 1;
   height: 1px;
   background: #000000;
   display: block;
@@ -292,8 +291,7 @@ li {
   position: relative;
   top: 50%;
 }
-.c-sectionTitle__ttl::after {
-  content: "text";
+.c-sectionTitle__ttl--ja {
   color: #000;
   font-size: 16px;
   font-weight: bold;
@@ -391,9 +389,6 @@ li {
 .concept .c-sectionTitle__ttl {
   margin-bottom: 50px;
 }
-.concept .c-sectionTitle__ttl::after {
-  content: "コンセプト";
-}
 .concept__wrapper {
   display: flex;
   justify-content: space-between;
@@ -430,8 +425,7 @@ li {
   content: "";
   background: #fff;
 }
-.service .c-sectionTitle__ttl::after {
-  content: "事業案内";
+.service .c-sectionTitle__ttl--ja {
   color: #fff;
 }
 .service .l-section {
@@ -488,9 +482,6 @@ li {
   color: #000000;
 }
 
-.works .c-sectionTitle__ttl::after {
-  content: "実績紹介";
-}
 .works .c-sectionTitle__txt {
   color: #000;
 }
@@ -547,8 +538,7 @@ li {
   content: "";
   background: #fff;
 }
-.member .c-sectionTitle__ttl::after {
-  content: "メンバー紹介";
+.member .c-sectionTitle__ttl--ja {
   color: #fff;
 }
 
@@ -599,8 +589,57 @@ li {
   margin-top: 38px;
 }
 .topVisual .menu-tirgger {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
+}
+
+@media screen and (max-width: 499px) {
+  .topVisual {
+    background-position: center;
+    height: 100vh;
+  }
+  .topVisual__logo {
+    height: 40px;
+    width: 320px;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+  }
+  .topVisual__info {
+    position: absolute;
+    top: 50%;
+    left: 84px;
+    transform: translateY(-50%);
+  }
+  .topVisual__info__catch {
+    font-weight: 600;
+    font-size: 58px;
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+    text-align: left;
+    color: #fff;
+  }
+  .topVisual__info__sub-catch {
+    font-family: "BIZ UDPGothic";
+    font-size: 22px;
+    letter-spacing: 0.2em;
+    text-align: left;
+    color: #fff;
+  }
+  .topVisual__info__txt {
+    font-family: "BIZ UDPGothic";
+    font-size: 16px;
+    letter-spacing: 0.2em;
+    line-height: 1.75;
+    text-align: left;
+    color: #fff;
+    margin-top: 38px;
+  }
+  .topVisual .menu-tirgger {
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

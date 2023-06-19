@@ -47,7 +47,7 @@ li{
     }
     &__ttl::before{
       content: '';
-      flex-grow: 1;/* 余白を分け与える */
+      flex-grow: 1;
       height: 1px;
       background: #000000;
       display: block;
@@ -55,8 +55,7 @@ li{
       position: relative;
       top: 50%;
     }
-    &__ttl::after {
-      content: 'text';
+    &__ttl--ja {
       color: #000;
       font-size: 16px;
       font-weight: bold;

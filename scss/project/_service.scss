@@ -4,9 +4,8 @@
           content: '';
           background: #fff;
         }
-        &__ttl::after {
-          content: '事業案内';
-          color: #fff;
+        &__ttl--ja{
+            color: #fff;
         }
     }
     .l-section{
