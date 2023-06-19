@@ -1,4 +1,5 @@
 .concept {
+    position: relative;
     .c-sectionTitle{
         margin-bottom: 0px;
         &__ttl{
@@ -33,6 +34,11 @@
             text-align: left;
             color: #000;
         }
+    }
+    .c-contact{
+          position: absolute;
+          top: 30px;
+          right: 00%;
     }
 }
 

@@ -56,6 +56,9 @@ table {
 .l-footer {
   width: 100%;
 }
+.l-footer__container {
+  padding: 0 20px;
+}
 .l-footer__up {
   max-width: 1200px;
   margin: 0 auto;
@@ -129,8 +132,8 @@ table {
 }
 
 .l-contact {
-  width: 100%;
   height: 350px;
+  padding: 0 20px;
 }
 .l-contact__lists {
   display: flex;
@@ -327,14 +330,41 @@ li {
   color: #2D2D2D;
 }
 
+.c-contact__item {
+  width: 100px;
+  height: 100px;
+  background-color: #1b1b1d;
+  position: relative;
+  margin-top: 20px;
+}
+.c-contact__item__logo img {
+  margin: 0 auto;
+  display: block;
+  height: 36px;
+  width: auto;
+}
+.c-contact__item__name {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+  margin-top: 8px;
+}
+.c-contact__item:first-child {
+  margin-top: 0px;
+}
+.c-contact__wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .menu-tirgger {
   width: 84px;
   height: 84px;
   background-color: #fff;
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 9999;
 }
 .menu-tirgger__wrap {
   position: absolute;
@@ -352,6 +382,9 @@ li {
   margin: 10px 0;
 }
 
+.concept {
+  position: relative;
+}
 .concept .c-sectionTitle {
   margin-bottom: 0px;
 }
@@ -387,6 +420,11 @@ li {
   text-align: left;
   color: #000;
 }
+.concept .c-contact {
+  position: absolute;
+  top: 30px;
+  right: 0%;
+}
 
 .service .c-sectionTitle__ttl::before {
   content: "";
@@ -403,8 +441,51 @@ li {
   display: flex;
   justify-content: space-between;
 }
+.service__lists--gray {
+  background-color: #5B5B5D;
+}
+.service__lists--white {
+  background-color: #FFFFFF;
+}
 .service__list {
   width: 20%;
+}
+.service__list__wrapper {
+  max-width: 239px;
+  max-height: 100%;
+  margin: 45px 0 30px;
+}
+.service__list__logo {
+  display: block;
+  margin: 0 auto;
+}
+.service__list__logo img {
+  width: 75px;
+  height: 75px;
+}
+.service__list__name {
+  font-size: 22px;
+  color: #FFFFFF;
+  font-family: Oswald;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  padding: 12px 0;
+}
+.service__list__name--white {
+  font-size: 22px;
+  color: #000000;
+}
+.service__list__text {
+  font-weight: normal;
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  line-height: 18px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.service__list__text--white {
+  color: #000000;
 }
 
 .works .c-sectionTitle__ttl::after {
@@ -516,5 +597,10 @@ li {
   text-align: left;
   color: #fff;
   margin-top: 38px;
+}
+.topVisual .menu-tirgger {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 /*# sourceMappingURL=style.css.map */

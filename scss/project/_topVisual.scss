@@ -6,7 +6,6 @@
     height: 100vh;
     position: relative;
     padding: 0 20px;
-    
     &__logo{
         height: 40px;
         width: 320px;
@@ -43,6 +42,11 @@
             color: #fff;
             margin-top: 38px;
         }
+    }
+    .menu-tirgger{
+        position: absolute;
+        top: 0;
+        right: 0;
     }
 }
 

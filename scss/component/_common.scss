@@ -92,15 +92,46 @@ li{
         color: #2D2D2D;
     }
 }
+.c-contact {
+    &__item {
+        width: 100px;
+        height: 100px;
+        background-color: #1b1b1d;
+        position: relative;
+        margin-top: 20px;
+        &__logo {
+            img{
+                margin: 0 auto;
+                display: block;
+                height: 36px;
+                width: auto;
+            }
+        }
+        &__name {
+            font-family: Poppins;
+            font-weight: 600;
+            font-size: 12px;
+            text-align: center;
+            color: #fff;
+            margin-top: 8px;
+        }
+    }  
+    &__item:first-child {
+        margin-top: 0px;
+    }
+    &__wrapper{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
 
+// メニュー
 .menu-tirgger{
     width: 84px;
     height: 84px;
     background-color: #fff;
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 9999;
     &__wrap{
         position: absolute;
         top: 50%;
