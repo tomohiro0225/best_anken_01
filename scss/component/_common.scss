@@ -20,6 +20,12 @@ li{
 .font{
     font-family: Oswald;
 }
+.pc-on{
+    display: block;
+}
+.sp-on{
+    display: none;
+}
 // 背景色
 .bg-black{
     background-color: #1B1B1D;
@@ -151,21 +157,28 @@ li{
 
 
 @media screen and (max-width:499px) {
+    .pc-on{
+        display: none;
+    }
+    .sp-on{
+        display: inline;
+    }
     .c-sectionTitle{
         margin-bottom: 20px;
         &__ttl{
-            width: max-content;
+            width: min-content;
+            height: 30px;
             margin-bottom: 10px;
-            display: block;
-            height: 37px;
             img{
-                display: block;
+                width: min-content;
+                display: inline-block;
                 padding: 0 15px;
             }
         }
         &__ttl::before{
           content: '';
           width: 50px;
+          display: block;
         }
         &__ttl--ja {
           display: block;
@@ -173,6 +186,16 @@ li{
           position: static;
           top: 0%;
           transform: translateY(0%);
+          margin:0 0 20px 65px;
+        }
+    }
+    .c-btn{
+        width: 200px;
+        height: 40px;
+        border: solid 2px #000;
+        margin: 40px auto 0px;
+        a{
+            font-size: 18px;
         }
     }
 }

@@ -55,4 +55,34 @@
 @media screen and (max-width:768px) {}
 
 @media screen and (max-width:499px) {
+    .works {
+        &__lists {
+            display: block;
+            justify-content: start;
+        }
+        &__list {
+            width: auto;
+            margin-right: 0;
+        }
+        &__list:last-child {
+            display: none;
+        }
+        &__list__img {
+            position: relative;
+        }
+        &__list__cap {
+            background-color: #39393C;
+        }
+        &__list__name {
+            font-weight: bold;
+            font-size: 15px;
+            letter-spacing: 0.1em;
+            text-align: left;
+            color: #fff;
+            padding: 10px 20px 0;
+        }
+        &__list__text {
+            padding: 10px 20px;
+        }
+    }
 }

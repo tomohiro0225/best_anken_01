@@ -36,7 +36,6 @@
             font-weight: bold;
             font-size: 38px;
             line-height: 1.47;
-            text-align: left;
             color: #fff;
             text-align: center;
         }
@@ -95,4 +94,82 @@
 @media screen and (max-width:768px) {}
 
 @media screen and (max-width:499px) {
+    .l-contact {
+        height: auto;
+        padding: 0;
+        &__lists {
+            display: block;
+            justify-content: start;
+            border-bottom: none;
+        }
+        &__list {
+            width: auto;
+            position: relative;
+            border-left: none;
+            border-bottom: solid 2px #fff;
+            height: 120px;
+            &__contact {
+                width: 187px;
+                height: 30px;
+            }
+            &__wrap{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto;
+            }
+            &__text {
+                margin-top: 0px;
+            }
+            &__text__tel {
+                font-size: 30px;
+                letter-spacing: 0.1em;
+                line-height: 10px;
+                
+            }
+            &__text__time {
+                line-height: 1.5;
+            }
+            &__text__time:last-child {
+                line-height: 0;
+                margin-top: 5px;
+            }
+            &__logo {
+                width: 60px;
+                height: 60px;
+                margin: 0 30px 0 0;
+            }
+            &__logo-line {
+                width: 60px;
+                height: 2px;
+                margin: 0 auto;
+                margin-top: 21px;
+                background-color: #fff;
+            }
+        }
+        &__list:first-child{
+            width: auto;
+            height: 70px;
+        }
+        &__btn {
+            background: none;
+            margin: 0;
+            min-width: 200px;
+            &__wrap{
+                border: none;
+            }
+            a{
+                font-weight: bold;
+                font-size: 20px;
+                color: #2d2d2d;
+                display: block;
+                text-align: center;
+                background: #FFFFFF;
+                margin: 0 auto;
+                padding: 10px 18px;
+            }
+        
+        }
+    
+    }
 }

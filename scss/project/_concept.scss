@@ -33,6 +33,7 @@
         }
     }
     .c-contact{
+          display: block;
           position: absolute;
           top: 30px;
           right: 00%;
@@ -42,4 +43,33 @@
 @media screen and (max-width:768px) {}
 
 @media screen and (max-width:499px) {
+    .concept {
+        position: relative;
+        .c-sectionTitle{
+            margin-bottom: 0px;
+            &__ttl{
+                margin-bottom: 10px;
+            }
+            &__ttl--ja{
+                margin-bottom: 30px;
+            }
+        }
+        &__wrapper {
+            display: block;
+            justify-content: start;
+        }
+        &__title {
+            width: auto;
+            font-size: 22px;
+            line-height: 22px;
+            margin-bottom: 20px;
+            margin-right: 0;
+        }
+        &__text {
+            width: auto;
+        }
+        .c-contact{
+            display: none;
+        }
+    }
 }

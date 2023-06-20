@@ -36,7 +36,6 @@
   font-weight: bold;
   font-size: 38px;
   line-height: 1.47;
-  text-align: left;
   color: #fff;
   text-align: center;
 }
@@ -84,5 +83,83 @@
   padding: 20px 0px;
   width: calc(100% - 22px);
   height: calc(100% - 4px);
+}
+
+@media screen and (max-width: 499px) {
+  .l-contact {
+    height: auto;
+    padding: 0;
+  }
+  .l-contact__lists {
+    display: block;
+    justify-content: start;
+    border-bottom: none;
+  }
+  .l-contact__list {
+    width: auto;
+    position: relative;
+    border-left: none;
+    border-bottom: solid 2px #fff;
+    height: 120px;
+  }
+  .l-contact__list__contact {
+    width: 187px;
+    height: 30px;
+  }
+  .l-contact__list__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .l-contact__list__text {
+    margin-top: 0px;
+  }
+  .l-contact__list__text__tel {
+    font-size: 30px;
+    letter-spacing: 0.1em;
+    line-height: 10px;
+  }
+  .l-contact__list__text__time {
+    line-height: 1.5;
+  }
+  .l-contact__list__text__time:last-child {
+    line-height: 0;
+    margin-top: 5px;
+  }
+  .l-contact__list__logo {
+    width: 60px;
+    height: 60px;
+    margin: 0 30px 0 0;
+  }
+  .l-contact__list__logo-line {
+    width: 60px;
+    height: 2px;
+    margin: 0 auto;
+    margin-top: 21px;
+    background-color: #fff;
+  }
+  .l-contact__list:first-child {
+    width: auto;
+    height: 70px;
+  }
+  .l-contact__btn {
+    background: none;
+    margin: 0;
+    min-width: 200px;
+  }
+  .l-contact__btn__wrap {
+    border: none;
+  }
+  .l-contact__btn a {
+    font-weight: bold;
+    font-size: 20px;
+    color: #2d2d2d;
+    display: block;
+    text-align: center;
+    background: #FFFFFF;
+    margin: 0 auto;
+    padding: 10px 18px;
+  }
 }
 /*# sourceMappingURL=contact.css.map */
