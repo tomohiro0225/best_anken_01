@@ -380,6 +380,34 @@ li {
   margin: 10px 0;
 }
 
+@media screen and (max-width: 499px) {
+  .c-sectionTitle {
+    margin-bottom: 20px;
+  }
+  .c-sectionTitle__ttl {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin-bottom: 10px;
+    display: block;
+    height: 37px;
+  }
+  .c-sectionTitle__ttl img {
+    display: block;
+    padding: 0 15px;
+  }
+  .c-sectionTitle__ttl::before {
+    content: "";
+    width: 50px;
+  }
+  .c-sectionTitle__ttl--ja {
+    display: block;
+    font-size: 14px;
+    position: static;
+    top: 0%;
+    transform: translateY(0%);
+  }
+}
 .concept {
   position: relative;
 }

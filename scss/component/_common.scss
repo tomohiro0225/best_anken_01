@@ -149,7 +149,30 @@ li{
 }
 
 
-@media screen and (max-width:768px) {}
 
 @media screen and (max-width:499px) {
+    .c-sectionTitle{
+        margin-bottom: 20px;
+        &__ttl{
+            width: max-content;
+            margin-bottom: 10px;
+            display: block;
+            height: 37px;
+            img{
+                display: block;
+                padding: 0 15px;
+            }
+        }
+        &__ttl::before{
+          content: '';
+          width: 50px;
+        }
+        &__ttl--ja {
+          display: block;
+          font-size: 14px;
+          position: static;
+          top: 0%;
+          transform: translateY(0%);
+        }
+    }
 }
