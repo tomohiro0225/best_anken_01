@@ -185,23 +185,14 @@
           <span class="c-sectionTitle__ttl--ja">メンバー紹介</span>
           <span class="c-sectionTitle__txt">佐保工務店のメンバーを紹介いたします。</span>
         </h2>
-        <div class="member__img__lists">
-          <div class="member__img__list">
-            <img src="/img/member01.png" alt="佐保 博文">
-          </div>
-          <div class="member__img__list">
-            <img src="/img/member03.png" alt="佐保 謙二">
-          </div>
-          <div class="member__img__list">
-            <img src="/img/member04.png" alt="メンバー">
-          </div>
-          <div class="member__img__list">
-            <img src="/img/member04.png" alt="メンバー">
-          </div>
-          <div class="member__img__list">
-            <img src="/img/member02.png" alt="小西 健夫">
-          </div>
-        </div>
+        <ul class="slider">
+          <li><img src="/img/member01.png" alt=""></li>
+          <li><img src="/img/member03.png" alt=""></li>
+          <li><img src="/img/member04.png" alt=""></li>
+          <li><img src="/img/member04.png" alt=""></li>
+          <li><img src="/img/member04.png" alt=""></li>
+          <li><img src="/img/member02.png" alt=""></li>
+        </ul>
         <div class="c-btn"><a href="">Read more</a></div>
       </div> 
     </section>
@@ -244,30 +235,35 @@
       </ul>
     </section>
     <!-- /contact -->
+
+    <!-- menu-modal -->
+    <div class="modal">
+      <div class="modal__menu">
+        <ul class="modal__menu__items">
+            <li class="modal__menu__item"><a href="">会社理念</a></li>
+            <li class="modal__menu__item"><a href="">事業案内</a></li>
+            <li class="modal__menu__item"><a href="">実績紹介</a></li>
+            <li class="modal__menu__item"><a href="">会社概要</a></li>
+            <li class="modal__menu__item"><a href="">メンバー紹介</a></li>
+            <li class="modal__menu__item"><a href="">お問い合わせ</a></li>
+            <li class="modal__menu__item"><a href=""><img src="/img/sns01.png" alt=""></a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- /menu-modal -->
     
   </main>
   <!-- /main -->
 
   <!-- footer -->
-  <footer class="l-footer">
+  <footer class="l-footer pc-on"s>
     <div class=" l-footer__container bg-black">
       <div class="l-footer__up">
         <div class="l-footer__logo">
           <a href="#">
             <img src="/img/logo.svg" alt="SAHO-Komuten">
           </a>
-        </div><ul class="l-footer__icons sp-on">
-          <li class="l-footer__icon">
-            <a href="">
-              <img src="/img/sns_dark-01.png" alt="">
-            </a>
-          </li>
-          <li class="l-footer__icon">
-            <a href="">
-              <img src="/img/sns_dark-02.png" alt="">
-            </a>
-          </li>
-        </ul>
+        </div>
         <div class=" l-footer__navi pc-on">
             <ul class="l-footer__navi__items">
                 <li class="l-footer__navi__item"><a href="">会社理念</a></li>
@@ -279,11 +275,9 @@
             </ul>
             <p class=" l-footer__poricy">プライバシーポリシー</p>
           </div>
-          <p class=" l-footer__poricy sp-on">プライバシーポリシー</p>
-          <p class=" l-footer__copywriter sp-on">©  2023 SAHO KOUMUTEN Inc. All rights reserved.</p>
       </div>
     </div>
-    <div class=" l-footer__container pc-on">
+    <div class=" l-footer__container">
       <div class="l-footer__down">
         <p class=" l-footer__copywriter">©  2023 SAHO KOUMUTEN Inc. All rights reserved.</p>
         <ul class="l-footer__icons">
@@ -299,6 +293,31 @@
           </li>
         </ul>
       </div>
+    </div>
+  </footer>
+  <footer class="l-footer sp-on">
+    <div class=" l-footer__container bg-black">
+      <div class="l-footer__up">
+        <div class="l-footer__logo">
+          <a href="#">
+            <img src="/img/logo.svg" alt="SAHO-Komuten">
+          </a>
+        </div><ul class="l-footer__icons">
+          <li class="l-footer__icon">
+            <a href="">
+              <img src="/img/sns_dark-01.png" alt="">
+            </a>
+          </li>
+          <li class="l-footer__icon">
+            <a href="">
+              <img src="/img/sns_dark-02.png" alt="">
+            </a>
+          </li>
+        </ul>
+          <p class=" l-footer__poricy">プライバシーポリシー</p>
+          <p class=" l-footer__copywriter">©  2023 SAHO KOUMUTEN Inc. All rights reserved.</p>
+      </div>
+    </div>
     </div>
   </footer>
   <!-- /footer -->

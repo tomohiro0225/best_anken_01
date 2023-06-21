@@ -198,6 +198,7 @@ li {
   width: 84px;
   height: 84px;
   background-color: #fff;
+  z-index: 9999;
 }
 .menu-tirgger__wrap {
   position: absolute;
@@ -213,6 +214,64 @@ li {
 }
 .menu-tirgger span:nth-child(2n) {
   margin: 10px 0;
+}
+
+.menu-tirgger.active {
+  position: relative;
+}
+.menu-tirgger.active span:nth-child(1n) {
+  width: 35px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.menu-tirgger.active span:nth-child(2n) {
+  display: none;
+}
+.menu-tirgger.active span:nth-child(3n) {
+  width: 35px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.modal.active {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.modal {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  position: relative;
+  z-index: 100;
+}
+.modal__menu__items {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal__menu__item {
+  margin-bottom: 30px;
+}
+.modal__menu__item a {
+  display: block;
+  font-weight: normal;
+  font-size: 20px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  color: #fff;
+}
+.modal__menu__item a img {
+  width: 32px;
+  height: 32px;
 }
 
 @media screen and (max-width: 499px) {
@@ -237,7 +296,7 @@ li {
     width: -moz-min-content;
     width: min-content;
     display: inline-block;
-    padding: 0 15px;
+    padding: 0 10px;
   }
   .c-sectionTitle__ttl::before {
     content: "";
@@ -250,7 +309,7 @@ li {
     position: static;
     top: 0%;
     transform: translateY(0%);
-    margin: 0 0 20px 65px;
+    margin: 0 0 20px 60px;
   }
   .c-btn {
     width: 200px;
@@ -260,6 +319,26 @@ li {
   }
   .c-btn a {
     font-size: 18px;
+  }
+  .menu-tirgger {
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+  }
+  .menu-tirgger__wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .menu-tirgger span {
+    width: 40px;
+    height: 2px;
+    background: #000;
+    display: block;
+  }
+  .menu-tirgger span:nth-child(2n) {
+    margin: 10px 0;
   }
 }
 .l-footer {
@@ -340,7 +419,7 @@ li {
   padding-right: 0px;
 }
 
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 768px) {
   .l-footer {
     width: 100%;
   }
@@ -472,7 +551,7 @@ li {
   height: calc(100% - 4px);
 }
 
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 768px) {
   .l-contact {
     height: auto;
     padding: 0;
@@ -504,14 +583,14 @@ li {
   }
   .l-contact__list__text__tel {
     font-size: 30px;
-    letter-spacing: 0.1em;
-    line-height: 10px;
+    line-height: 30px;
   }
   .l-contact__list__text__time {
-    line-height: 1.5;
+    line-height: 1;
+    padding-top: 0;
+    margin-top: 10px;
   }
   .l-contact__list__text__time:last-child {
-    line-height: 0;
     margin-top: 5px;
   }
   .l-contact__list__logo {
@@ -603,7 +682,7 @@ li {
   right: 0%;
 }
 
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 768px) {
   .concept {
     position: relative;
   }
@@ -832,12 +911,62 @@ li {
 .member .c-sectionTitle__ttl--ja {
   color: #fff;
 }
+.member .slider {
+  margin: 0 auto 0;
+  width: 94%;
+  height: 400px;
+  padding-bottom: 50px;
+}
+.member .slider img {
+  width: 20vw;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+.member .slider .slick-slide {
+  margin-top: 35px;
+  transform: scale(1);
+  transition: all 0.5s;
+  opacity: 0.5;
+}
+.member .slider .slick-slide.slick-center {
+  margin-top: 50px;
+  position: static;
+  transform: scale(1.2);
+  opacity: 1;
+  height: 350px;
+}
+
+@media screen and (max-width: 768px) {
+  .member .slider {
+    width: calc(100vw - 40px);
+    height: 330px;
+    padding-bottom: 40px;
+  }
+  .member .slider img {
+    width: 33vw;
+  }
+  .member .slider .slick-slide {
+    margin-top: 30px;
+  }
+  .member .slider .slick-slide.slick-center {
+    margin-top: 40px;
+    height: 330px;
+  }
+}
 @media screen and (max-width: 499px) {
-  .member__img__lists {
-    width: -webkit-min-content;
-    width: -moz-min-content;
-    width: min-content;
-    height: 200px;
+  .member .slider {
+    height: 180px;
+  }
+  .member .slider img {
+    width: 30vw;
+  }
+  .member .slider .slick-slide {
+    margin-top: 20px;
+  }
+  .member .slider .slick-slide.slick-center {
+    margin-top: 20px;
+    height: 180px;
   }
 }
 .topVisual {

@@ -1,11 +1,27 @@
-// $('.member__img__lists').slick({
-//     autoplay: true,
-//     infinite: true,
-//     speed: 500,
-//     slidesToShow: 3,
-//     slidesToScroll: 1,
-//     arrows: false,
-//     centerMode: true,
-//     variableWidth: true,
-//     dots: false,
-//   });
+$('.slider').slick({
+    autoplay: false,
+    dots: false,
+    arrows:false,
+    centerMode: true,
+    centerPadding: '0px',
+    slidesToShow: 5,
+    slidesToScroll: 0,
+    responsive: [
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          
+        },
+      },
+    ],
+});
+
+$(function(){
+  // ハンバーガーメニュー
+  $('.menu-tirgger').click(function(){
+    $(this).toggleClass('active');
+    $('.modal').toggleClass('active');
+  });
+});

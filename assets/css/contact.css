@@ -85,7 +85,7 @@
   height: calc(100% - 4px);
 }
 
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 768px) {
   .l-contact {
     height: auto;
     padding: 0;
@@ -117,14 +117,14 @@
   }
   .l-contact__list__text__tel {
     font-size: 30px;
-    letter-spacing: 0.1em;
-    line-height: 10px;
+    line-height: 30px;
   }
   .l-contact__list__text__time {
-    line-height: 1.5;
+    line-height: 1;
+    padding-top: 0;
+    margin-top: 10px;
   }
   .l-contact__list__text__time:last-child {
-    line-height: 0;
     margin-top: 5px;
   }
   .l-contact__list__logo {
