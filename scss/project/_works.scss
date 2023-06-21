@@ -2,6 +2,9 @@
     .c-sectionTitle__txt{
         color: #000;
     }
+    .c-sectionTitle__ttl::after{
+        content: '実績紹介';
+    }
     &__lists {
         display: flex;
         justify-content: space-between;

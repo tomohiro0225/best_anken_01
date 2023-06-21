@@ -1,5 +1,11 @@
 .l-footer {
     width: 100%;
+    &-pc{
+        display: block;
+    }
+    &-sp{
+        display: none;
+    }
     &__container{
         padding: 0 20px;
     }
@@ -80,6 +86,12 @@
 @media screen and (max-width:768px) {
     .l-footer {
         width: 100%;
+        &-pc{
+            display: none;
+        }
+        &-sp{
+            display: block;
+        }
         &__container{
             padding: 0px;
         }

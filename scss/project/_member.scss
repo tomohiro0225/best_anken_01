@@ -7,6 +7,9 @@
         &__ttl--ja{
           color: #fff;
         }
+        &__ttl::after{
+            content: 'メンバー紹介';
+        }
     }
     .slider {
       margin: 0 auto 0;
