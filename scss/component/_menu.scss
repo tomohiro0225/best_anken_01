@@ -1,0 +1,103 @@
+
+// メニュー
+.menu-tirgger{
+    width: 84px;
+    height: 84px;
+    background-color: #fff;
+    z-index: 9999;
+    &__wrap{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    span{
+        width: 40px;
+        height: 2px;
+        background: #000;
+        display: block;
+    }
+    span:nth-child(2n){
+        margin: 10px 0;
+    }
+}
+.menu-tirgger.active{
+    position: relative;
+    span:nth-child(1n){
+        width: 35px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+    span:nth-child(2n){
+        display: none;
+    }
+    span:nth-child(3n){
+        width: 35px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+}
+// モーダルメニュー
+.modal{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    position: relative;
+    z-index: 100;
+    &__menu__items{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &__menu__item{
+        margin-bottom: 30px;
+        a{
+            display: block;
+            font-weight: normal;
+            font-size: 20px;
+            letter-spacing: 0.2em;
+            text-align: center;
+            color: #fff;
+            img{
+                width: 32px;
+                height: 32px;
+            }
+        }
+    }
+}
+.modal.active{
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+@media screen and (max-width:499px) {
+    // メニュー
+    .menu-tirgger{
+        width: 60px;
+        height: 60px;
+        background-color: #fff;
+        &__wrap{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        span{
+            width: 40px;
+            height: 2px;
+            background: #000;
+            display: block;
+        }
+        span:nth-child(2n){
+            margin: 10px 0;
+        }
+    }
+}
