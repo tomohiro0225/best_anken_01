@@ -53,6 +53,67 @@ table {
   border-spacing: 0;
 }
 
+.l-header {
+  height: 80px;
+  width: 100%;
+  background-color: #1b1b1d;
+  border-bottom: solid 1px #707070;
+  /* ロゴ */
+  /* ナビゲーション */
+}
+.l-header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  height: 100%;
+  margin: auto;
+  padding: 0 20px;
+}
+.l-header__logo img {
+  height: 40px;
+  vertical-align: middle;
+}
+.l-header__logo img:hover {
+  opacity: 0.7;
+  transition: 0.2s ease-in-out;
+}
+.l-header__navi__items {
+  display: flex;
+  list-style: none;
+}
+.l-header__navi__item a {
+  display: inline-block;
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
+  padding: 6px 13px;
+  color: #fff;
+}
+.l-header__navi__item a:hover {
+  color: #000000;
+  background-color: #fff;
+}
+.l-header .menu-tirgger {
+  position: relative;
+}
+
+@media screen and (max-width: 499px) {
+  .l-header {
+    height: 60px;
+    /* ロゴ */
+  }
+  .l-header__container {
+    height: 100%;
+    margin: auto;
+    padding: 0;
+  }
+  .l-header__logo {
+    margin-left: 20px;
+  }
+  .l-header__logo img {
+    height: 20px;
+  }
+}
 .l-footer {
   width: 100%;
 }
@@ -360,6 +421,69 @@ table {
     padding: 50px 20px;
   }
 }
+.keyVisual {
+  width: 100vw;
+  height: 300px;
+  background-color: #1b1b1d;
+}
+.keyVisual__info {
+  max-width: 1200px;
+  height: 300px;
+  padding: 0 20px;
+  position: relative;
+}
+.keyVisual__info__wrapper {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(0%, -50%);
+}
+.keyVisual__info__logo {
+  display: block;
+  margin-bottom: 14px;
+  width: 400px;
+  height: 37px;
+}
+.keyVisual__info__sub-catch {
+  font-size: 22px;
+  color: #fff;
+  margin-bottom: 34px;
+  text-align: left;
+}
+.keyVisual__info__txt {
+  font-size: 22px;
+  color: #fff;
+  text-align: left;
+}
+
+@media screen and (max-width: 499px) {
+  .keyVisual {
+    width: 100vw;
+    height: 220px;
+    background-color: #1b1b1d;
+  }
+  .keyVisual__info {
+    height: 220px;
+  }
+  .keyVisual__info__wrapper {
+    top: 50%;
+    left: 20px;
+    transform: translate(0%, -50%);
+  }
+  .keyVisual__info__logo {
+    display: block;
+    margin-bottom: 5px;
+    width: 200px;
+    height: 20px;
+  }
+  .keyVisual__info__sub-catch {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .keyVisual__info__txt {
+    font-size: 14px;
+  }
+}
 html {
   font-size: 10px;
   color: #333;
@@ -502,18 +626,13 @@ li {
 
 .c-btn {
   width: 228px;
-  height: 60px;
+  padding: 20px 50px;
   border: solid 2px #000;
-  position: relative;
   background-color: #fff;
   margin: 50px auto 0px;
 }
 .c-btn a {
   display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   font-size: 20px;
   font-weight: bold;
   width: 100%;
