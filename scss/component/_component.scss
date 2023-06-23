@@ -53,7 +53,7 @@
     }
 }
 .c-btn{
-    width: 228px;
+    width: fit-content;
     padding: 20px 50px;
     border: solid 2px #000;
     background-color: #fff;
@@ -64,6 +64,22 @@
         font-weight: bold;
         width: 100%;
         color: #2D2D2D;
+    }
+}
+.c-btn-large{
+    width: fit-content;
+    padding: 30px 115px;
+    border: solid 2px #000;
+    background-color: #fff;
+    margin: 50px auto 0px;
+    a{
+        font-size: 20px;
+        font-weight: bold;
+        width: 100%;
+        color: #2D2D2D;
+    }
+    span{
+        display: inline-block;
     }
 }
 .c-contact {
@@ -102,7 +118,31 @@
 }
 
 //pager
-.c-pager{}
+.c-pager{
+    margin-top: 25px;
+    &__lists {
+        margin: 0 auto;
+        max-width: 1200px;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+    }
+    &__list {
+        margin-right: 10px;
+        font-size: 14px;
+        color: #000;
+        line-height: 18px;
+        img{
+            width:16px;
+            height: 18px;
+        }
+        a{
+            color: #000;
+        }
+    }
+    
+    
+}
 
 @media screen and (max-width:768px) {
     .c-sectionTitle{
@@ -128,6 +168,22 @@
         &__ttl--ja {
           display: block;
             margin: 10px 0 0 60px;
+        }
+    }
+    .c-btn-large{
+        width: fit-content;
+        padding: 20px 40px;
+        border: solid 2px #000;
+        background-color: #fff;
+        margin: 50px auto 0px;
+        a{
+            font-size: 20px;
+            font-weight: bold;
+            width: 100%;
+            color: #2D2D2D;
+        }
+        span{
+            display: inline-block;
         }
     }
 }

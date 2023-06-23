@@ -10,7 +10,7 @@
         &__wrapper {
             position: absolute;
             top: 50%;
-            left: 0%;
+            left: 20px;
             transform: translate(0%, -50%);
         }
         &__logo{
@@ -40,11 +40,6 @@
         background-color: #1b1b1d;
         &__info {
             height: 220px;
-            &__wrapper {
-                top: 50%;
-                left: 20px;
-                transform: translate(0%, -50%);
-            }
             &__logo{
                 display: block;    
                 margin-bottom: 5px;
