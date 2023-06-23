@@ -533,15 +533,6 @@ li {
   .sp-on {
     display: inline;
   }
-  .c-btn {
-    width: 200px;
-    height: 40px;
-    border: solid 2px #000;
-    margin: 40px auto 0px;
-  }
-  .c-btn a {
-    font-size: 18px;
-  }
   .menu-tirgger {
     width: 60px;
     height: 60px;
@@ -758,6 +749,19 @@ li {
     display: inline-block;
   }
 }
+@media screen and (max-width: 499px) {
+  .c-btn {
+    width: 200px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    border: solid 2px #000;
+    margin: 40px auto 0px;
+  }
+  .c-btn a {
+    font-size: 18px;
+  }
+}
 .menu-tirgger {
   width: 84px;
   height: 84px;
@@ -942,6 +946,7 @@ li {
 }
 .service .c-sectionTitle__ttl::after {
   content: "事業案内";
+  color: #fff;
 }
 .service .c-sectionTitle__ttl--ja {
   color: #fff;
@@ -1142,6 +1147,7 @@ li {
 }
 .member .c-sectionTitle__ttl::after {
   content: "メンバー紹介";
+  color: #fff;
 }
 .member .slider {
   margin: 0 auto 0;
@@ -1202,7 +1208,7 @@ li {
   }
 }
 .topVisual {
-  background-image: url(/img/topVisual.png);
+  background-image: url(/img/top/topVisual.png);
   background-position: right;
   background-size: cover;
   background-repeat: no-repeat;

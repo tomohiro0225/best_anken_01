@@ -187,3 +187,15 @@
         }
     }
 }
+
+@media screen and (max-width:499px) {
+    .c-btn{
+        width: 200px;
+        height: fit-content;
+        border: solid 2px #000;
+        margin: 40px auto 0px;
+        a{
+            font-size: 18px;
+        }
+    }
+}
