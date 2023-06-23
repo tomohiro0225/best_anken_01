@@ -1,39 +1,113 @@
-.page-404 {
-    &__title {
-        font-weight: bold;
-        font-size: 28px;
-        letter-spacing: 0.15em;
-        line-height: 44px;
-        text-align: center;
-        color: #000;
+.privacy-top{
+    .c-sectionTitle{
         margin-bottom: 50px;
+        &__ttl::before{
+            width: 50px;
+        }
+        &__ttl::after{
+            content: '個人情報保護方針';
+        }
     }
-    &__txt {
+    &__txt{
+        font-weight: normal;
         font-size: 16px;
         letter-spacing: 0.15em;
         line-height: 28px;
-        text-align: center;
-        color: #000;
+        text-align: left;
     }
-    .c-btn-large{
-        img{
-            width:16px;
-            height: 18px;
-            margin-right: 10px;
+}
+.privacy-about {
+    
+    &__contain {
+        margin-bottom: 50px;
+    }
+    &__title {
+        text-align: left;
+        margin-bottom: 50px;
+        span{
+            padding-bottom: 25px;
+            border-bottom: solid 1px #000;
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: 0.1em;
+            font-weight: bold;   
         }
+    }
+    &__txt {
+        margin-bottom: 25px;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.15em;
+        text-align: left;
+    }
+    &__txt:last-child {
+        margin-bottom: 0px;
+    }
+    &__lists {
+        
+    }
+    &__list {
+        margin-bottom: 25px;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.15em;
+        list-style: inside;
+        list-style-type: decimal;
+        text-align: left;
+    }
+    &__list:last-child {
+        margin-bottom: 0px;
     }
 }
 
-
 @media screen and (max-width:499px) {
-    .page-404 {
+    .privacy-top{
+        .c-sectionTitle{
+            margin-bottom: 40px;
+            &__ttl{
+                line-height: 30px;
+                img{
+                    width: fit-content;
+                    height: 25px;
+                }
+            }
+            &__ttl--ja{
+                margin:10px 0 40px 60px;
+            }
+        }
+        &__txt{
+            font-size: 14px;
+            letter-spacing: 0.1em;
+            line-height: 21px;
+        }
+    }
+    .privacy-about { 
+        &__contain {
+            margin-bottom: 40px;
+        }
         &__title {
-            font-size: 24px;
-            line-height: 36px;
+            text-align: left;
+            margin-bottom: 40px;
+            span{
+                padding-bottom: 20px;
+                border-bottom: solid 1px #000;
+                font-size: 20px;
+                line-height: 28px;
+                letter-spacing: 0.1em;
+                font-weight: bold;   
+            }
         }
         &__txt {
+            margin-bottom: 20px;
             font-size: 14px;
             line-height: 21px;
+            letter-spacing: 0.1em;
+        }
+        &__list {
+            margin-bottom: 20px;
+            font-size: 14px;
+            line-height: 21px;
+            letter-spacing: 0.1em;
         }
     }
 }

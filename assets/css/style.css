@@ -409,15 +409,15 @@ table {
   }
 }
 .l-section {
-  margin: 0px auto;
-  padding: 100px 20px;
+  margin: 100px auto;
+  padding: 0px 20px;
   text-align: center;
   max-width: 1200px;
 }
 
 @media screen and (max-width: 768px) {
   .l-section {
-    padding: 50px 20px;
+    margin: 50px auto;
   }
 }
 .keyVisual {
@@ -429,6 +429,7 @@ table {
   max-width: 1200px;
   height: 300px;
   padding: 0 20px;
+  margin: 0 auto;
   position: relative;
 }
 .keyVisual__info__wrapper {
@@ -1287,6 +1288,110 @@ li {
   .topVisual__info__txt {
     line-height: 1.5;
     margin-top: 0px;
+  }
+}
+.privacy-top .c-sectionTitle {
+  margin-bottom: 50px;
+}
+.privacy-top .c-sectionTitle__ttl::before {
+  width: 50px;
+}
+.privacy-top .c-sectionTitle__ttl::after {
+  content: "個人情報保護方針";
+}
+.privacy-top__txt {
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 0.15em;
+  line-height: 28px;
+  text-align: left;
+}
+
+.privacy-about__contain {
+  margin-bottom: 50px;
+}
+.privacy-about__title {
+  text-align: left;
+  margin-bottom: 50px;
+}
+.privacy-about__title span {
+  padding-bottom: 25px;
+  border-bottom: solid 1px #000;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+.privacy-about__txt {
+  margin-bottom: 25px;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.15em;
+  text-align: left;
+}
+.privacy-about__txt:last-child {
+  margin-bottom: 0px;
+}
+.privacy-about__list {
+  margin-bottom: 25px;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.15em;
+  list-style: inside;
+  list-style-type: decimal;
+  text-align: left;
+}
+.privacy-about__list:last-child {
+  margin-bottom: 0px;
+}
+
+@media screen and (max-width: 499px) {
+  .privacy-top .c-sectionTitle {
+    margin-bottom: 40px;
+  }
+  .privacy-top .c-sectionTitle__ttl {
+    line-height: 30px;
+  }
+  .privacy-top .c-sectionTitle__ttl img {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 25px;
+  }
+  .privacy-top .c-sectionTitle__ttl--ja {
+    margin: 10px 0 40px 60px;
+  }
+  .privacy-top__txt {
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    line-height: 21px;
+  }
+  .privacy-about__contain {
+    margin-bottom: 40px;
+  }
+  .privacy-about__title {
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  .privacy-about__title span {
+    padding-bottom: 20px;
+    border-bottom: solid 1px #000;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+  }
+  .privacy-about__txt {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+  }
+  .privacy-about__list {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
   }
 }
 .page-404__title {
