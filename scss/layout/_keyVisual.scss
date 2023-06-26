@@ -17,7 +17,7 @@
         &__logo{
             display: block;    
             margin-bottom: 14px;
-            width: 400px;
+            width: fit-content;
             height: 37px;
         }
         &__sub-catch {
@@ -27,7 +27,7 @@
             text-align: left;
         }
         &__txt {
-            font-size: 22px;
+            font-size: 16px;
             color: #fff;
             text-align: left;
         }

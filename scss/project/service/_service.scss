@@ -1,0 +1,260 @@
+// conponent
+.c-sectionTitle{
+    &__ttl::before{
+      width: 50px;
+    }
+    &__ttl::after{
+      width: 500px;
+      display: inline-block;
+    }
+}
+
+.c-contact{
+    position: absolute;
+    top: 420px;
+    right: 0;
+}
+
+.service{
+    &-btn{
+        margin:50px 0 0 auto;
+    }
+    // overview
+    &-overview {
+        margin: 50px 0 88px;
+        &__logo {
+            width: 715px;
+            height: 91px;
+            margin: 0 auto 80px;
+            img{
+                width: 715px;
+                height: 91px;
+            }
+        }
+        &__txt {
+            font-weight: normal;
+            font-size: 18px;
+            letter-spacing: 0.15em;
+            line-height: 36px;
+            text-align: center;
+            color: #000;
+            margin-bottom: 100px;
+        }
+        &__lists {
+            display: flex;
+            flex-wrap: nowrap;
+            max-width: 1200px;
+            padding: 0 20px;
+            margin: 0 auto;
+        }
+        &__list {
+            position: relative;
+            width: calc(100% / 5 - 46px / 5);
+            height: 230px;
+            margin-right: 11px;
+            background-color: #000;
+        }
+        &__list:last-child {
+            margin-right: 0px;
+        }
+        &__list:before {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border-top: 24px solid #000;
+            border-right: 24px solid transparent;
+            border-left: 24px solid transparent;
+        }
+        &__list__img {
+            height: 82px;
+            margin: 20px 0 17px;
+            img{
+                width: fit-content;
+                height: 82px;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        &__list__title {
+            font-weight: 600;
+            font-size: 32px;
+            text-align: center;
+            color: #fff;
+            line-height: 47px;
+    
+        }
+        &__list__text {
+            height: 64px;
+            font-weight: normal;
+            font-size: 14px;
+            letter-spacing: 0.15em;
+            line-height: 20px;
+            text-align: center;
+            color: #fff;
+            vertical-align: middle;
+        }
+    }
+
+    // デザイン
+    &-design {
+        padding: 100px 0px 50px;
+        .c-sectionTitle__ttl::before {
+        background-color: #fff;
+        }
+        .c-sectionTitle__ttl::after {
+        display: block;
+        content: "オフィス＆ショップデザイン";
+        color: #fff;
+        }
+        .l-section{
+            margin: 0 auto;
+        }
+        &__lists {
+            display: flex;
+            flex-wrap: nowrap;
+            margin: 0 auto;
+        }
+        &__list {
+            width: calc(100% / 3 - 28px / 3);
+            margin-right: 14px;
+        }
+        &__list:last-child {
+            margin-right: 0px;
+        }
+
+    }
+
+    // リノベーション
+    &-renovation {
+        padding: 100px 0px 50px;
+        .c-sectionTitle__ttl::before {
+        background-color: #000;
+        }
+        .c-sectionTitle__ttl::after {
+        display: block;
+        content: "住宅リノベーション";
+        color: #000;
+        }
+        .c-sectionTitle__txt {
+        color: #000;
+        }
+        .l-section{
+            margin: 0 auto;
+        }
+        &__lists {
+            display: flex;
+            flex-wrap: nowrap;
+            margin: 0 auto;
+            max-width: 789px;
+        }
+        &__list {
+            width: calc(100% / 3 - 200px / 3);
+            margin-right: 100px;
+            height: 267px;
+        }
+        &__list:last-child {
+            margin-right: 0px;
+        }
+
+    }
+
+    // 新築注文住宅
+    &-house {
+        padding: 100px 0px 50px;
+        .c-sectionTitle__ttl::before {
+        background-color: #fff;
+        }
+        .c-sectionTitle__ttl::after {
+        display: block;
+        content: "新築注文住宅";
+        color: #fff;
+        }
+        .l-section{
+            margin: 0 auto;
+        }
+        &__lists {
+            display: flex;
+            flex-wrap: nowrap;
+            margin: 0 auto;
+        }
+        &__list {
+            width: calc(100% / 3 - 28px / 3);
+            margin-right: 14px;
+            max-height: 267px;
+            img{
+                width: fit-content;
+                max-height: 267px;
+            }
+        }
+        &__list:last-child {
+            margin-right: 0px;
+        }
+
+    }
+
+    // ソリューション
+    &-solution {
+        padding: 100px 0px 50px;
+        .c-sectionTitle__ttl::before {
+        background-color: #000;
+        }
+        .c-sectionTitle__ttl::after {
+        display: block;
+        content: "設備空間ソリューション";
+        color: #000;
+        }
+        .c-sectionTitle__txt {
+        color: #000;
+        }
+        .l-section{
+            margin: 0 auto;
+        }
+        &__lists {
+            display: flex;
+            flex-wrap: nowrap;
+            margin: 0 auto;
+        }
+        &__list {
+            width: calc(100% / 3 - 28px / 3);
+            margin-right: 14px;
+        }
+        &__list:last-child {
+            margin-right: 0px;
+        }
+
+    }
+
+    // 親方
+    &-oyakater {
+        padding: 100px 0px 50px;
+        .c-sectionTitle__ttl::before {
+        background-color: #fff;
+        }
+        .c-sectionTitle__ttl::after {
+        display: block;
+        content: "佐保工務店の親方達の修理・修繕・様々なお悩みサポート";
+        color: #fff;
+        }
+        .l-section{
+            margin: 0 auto;
+        }
+        &__lists {
+            display: flex;
+            flex-wrap: nowrap;
+            margin: 0 auto;
+        }
+        &__list {
+            width: calc(100% / 3 - 28px / 3);
+            margin-right: 14px;
+        }
+        &__list:last-child {
+            margin-right: 0px;
+        }
+
+    }
+    
+    
+}
+
