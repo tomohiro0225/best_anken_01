@@ -88,6 +88,7 @@ table {
   text-decoration: none;
   padding: 6px 13px;
   color: #fff;
+  font-size: 16px;
 }
 .l-header__navi__item a:hover {
   color: #000000;
@@ -470,7 +471,6 @@ table {
   .keyVisual__info__logo {
     display: block;
     margin-bottom: 5px;
-    width: 200px;
     height: 20px;
   }
   .keyVisual__info__sub-catch {
@@ -572,6 +572,9 @@ li {
 .c-sectionTitle__ttl img {
   display: block;
   padding: 0 15px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .c-sectionTitle__ttl::before {
   content: "";
@@ -1301,9 +1304,10 @@ li {
 }
 
 .c-contact {
-  position: absolute;
+  position: fixed;
   top: 420px;
   right: 0;
+  z-index: 9999;
 }
 
 .service-btn {
@@ -1329,6 +1333,7 @@ li {
   text-align: center;
   color: #000;
   margin-bottom: 100px;
+  padding: 0 20px;
 }
 .service-overview__lists {
   display: flex;
@@ -1343,19 +1348,6 @@ li {
   height: 230px;
   margin-right: 11px;
   background-color: #000;
-}
-.service-overview__list:last-child {
-  margin-right: 0px;
-}
-.service-overview__list:before {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  border-top: 24px solid #000;
-  border-right: 24px solid transparent;
-  border-left: 24px solid transparent;
 }
 .service-overview__list__img {
   height: 82px;
@@ -1385,6 +1377,19 @@ li {
   text-align: center;
   color: #fff;
   vertical-align: middle;
+}
+.service-overview__list:last-child {
+  margin-right: 0px;
+}
+.service-overview__list:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top: 24px solid #000;
+  border-right: 24px solid transparent;
+  border-left: 24px solid transparent;
 }
 .service-design {
   padding: 100px 0px 50px;
@@ -1463,18 +1468,20 @@ li {
   margin: 0 auto;
 }
 .service-house__list {
-  width: calc(33.3333333333% - 9.3333333333px);
-  margin-right: 14px;
-  max-height: 267px;
+  width: 32%;
+  margin-right: 2%;
+  aspect-ratio: 3/2;
 }
-.service-house__list img {
+.service-house__list:nth-child(2n) img {
+  display: block;
+  margin: 0 auto;
+  height: 100%;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  max-height: 267px;
 }
 .service-house__list:last-child {
-  margin-right: 0px;
+  margin-right: 0%;
 }
 .service-solution {
   padding: 100px 0px 50px;
@@ -1513,6 +1520,7 @@ li {
 }
 .service-oyakater .c-sectionTitle__ttl::after {
   display: block;
+  word-break: keep-all;
   content: "佐保工務店の親方達の修理・修繕・様々なお悩みサポート";
   color: #fff;
 }
@@ -1532,6 +1540,172 @@ li {
   margin-right: 0px;
 }
 
+@media screen and (max-width: 768px) {
+  .c-sectionTitle__ttl::before {
+    width: 50px;
+  }
+  .c-sectionTitle__ttl::after {
+    width: 500px;
+    display: inline-block;
+  }
+  .c-sectionTitle__ttl::after {
+    width: 500px;
+    display: inline-block;
+  }
+  .c-sectionTitle__ttl--ja {
+    color: #fff;
+    margin: 10px 0 20px 60px;
+    width: auto;
+  }
+  .c-contact {
+    position: absolute;
+    top: 420px;
+    right: 0;
+  }
+  .service-btn {
+    margin: 40px auto 0;
+  }
+  .service-overview {
+    margin: 50px 0 88px;
+  }
+  .service-overview__logo {
+    width: 314px;
+    height: 40px;
+    margin: 0 auto 50px;
+  }
+  .service-overview__logo img {
+    width: 314px;
+    height: 40px;
+  }
+  .service-overview__txt {
+    font-size: 16px;
+    letter-spacing: 0.15em;
+    line-height: 28px;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  .service-overview__lists {
+    flex-wrap: wrap;
+  }
+  .service-overview__list {
+    width: calc(50% - 7.5px);
+    height: 170px;
+    margin-right: 15px;
+    margin-bottom: 22px;
+  }
+  .service-overview__list:nth-child(2n) {
+    margin-right: 0px;
+  }
+  .service-overview__list:last-child {
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
+  .service-overview__list:before {
+    border-top: 12px solid #000;
+    border-right: 12px solid transparent;
+    border-left: 12px solid transparent;
+  }
+  .service-overview__list__img {
+    height: 62px;
+    margin: 20px 0 7px;
+  }
+  .service-overview__list__img img {
+    height: 62px;
+  }
+  .service-overview__list__title {
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+    line-height: 20px;
+    margin-bottom: 5px;
+  }
+  .service-overview__list__text {
+    height: 46px;
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    line-height: 18px;
+    text-align: center;
+  }
+  .service-design {
+    padding: 100px 0px 50px;
+  }
+  .service-design .c-sectionTitle__ttl::after {
+    display: none;
+  }
+  .service-design__list {
+    width: 32%;
+    margin-right: 2%;
+  }
+  .service-renovation {
+    padding: 100px 0px 50px;
+  }
+  .service-renovation .c-sectionTitle__ttl::after {
+    display: none;
+  }
+  .service-renovation .c-sectionTitle__ttl--ja {
+    color: #000;
+  }
+  .service-renovation__list {
+    width: 32%;
+    margin-right: 2%;
+    height: auto;
+  }
+  .service-house {
+    padding: 100px 0px 50px;
+  }
+  .service-house .c-sectionTitle__ttl::after {
+    display: none;
+  }
+  .service-house__list {
+    width: 38.6666666667%;
+    margin-right: 2%;
+    aspect-ratio: auto;
+    height: 88px;
+  }
+  .service-house__list:nth-child(2n) {
+    width: 18.6666666667%;
+  }
+  .service-house__list:nth-child(2n) img {
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .service-house__list:last-child {
+    margin-right: 0%;
+  }
+  .service-solution {
+    padding: 100px 0px 50px;
+  }
+  .service-solution .c-sectionTitle__ttl::after {
+    display: none;
+  }
+  .service-solution .c-sectionTitle__ttl--ja {
+    color: #000;
+  }
+  .service-solution__list {
+    width: 32%;
+    margin-right: 2%;
+  }
+  .service-oyakater {
+    padding: 100px 0px 50px;
+  }
+  .service-oyakater .c-sectionTitle__ttl {
+    margin-bottom: 20px;
+  }
+  .service-oyakater .c-sectionTitle__ttl::after {
+    display: none;
+  }
+  .service-oyakater .c-sectionTitle__ttl--ja {
+    line-height: 20px;
+  }
+  .service-oyakater__list {
+    width: 32%;
+    margin-right: 2%;
+  }
+}
 .privacy-top .c-sectionTitle {
   margin-bottom: 50px;
 }
