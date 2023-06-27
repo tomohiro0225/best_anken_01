@@ -1627,7 +1627,7 @@ li {
     text-align: center;
   }
   .service-design {
-    padding: 100px 0px 50px;
+    padding: 50px 0px 50px;
   }
   .service-design .c-sectionTitle__ttl::after {
     display: none;
@@ -1637,7 +1637,7 @@ li {
     margin-right: 2%;
   }
   .service-renovation {
-    padding: 100px 0px 50px;
+    padding: 50px 0px 50px;
   }
   .service-renovation .c-sectionTitle__ttl::after {
     display: none;
@@ -1651,7 +1651,7 @@ li {
     height: auto;
   }
   .service-house {
-    padding: 100px 0px 50px;
+    padding: 50px 0px 50px;
   }
   .service-house .c-sectionTitle__ttl::after {
     display: none;
@@ -1677,7 +1677,7 @@ li {
     margin-right: 0%;
   }
   .service-solution {
-    padding: 100px 0px 50px;
+    padding: 50px 0px 50px;
   }
   .service-solution .c-sectionTitle__ttl::after {
     display: none;
@@ -1690,7 +1690,7 @@ li {
     margin-right: 2%;
   }
   .service-oyakater {
-    padding: 100px 0px 50px;
+    padding: 50px 0px 50px;
   }
   .service-oyakater .c-sectionTitle__ttl {
     margin-bottom: 20px;
