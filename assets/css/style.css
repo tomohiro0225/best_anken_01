@@ -595,7 +595,7 @@ li {
   color: #000;
   font-size: 16px;
   font-weight: bold;
-  width: 200px;
+  width: 400px;
   position: relative;
   top: 50%;
   transform: translateY(-20%);
@@ -1303,7 +1303,6 @@ li {
   width: 50px;
 }
 .c-sectionTitle__ttl::after {
-  width: 500px;
   display: inline-block;
 }
 
@@ -1822,7 +1821,6 @@ li {
   width: 50px;
 }
 .c-sectionTitle__ttl::after {
-  width: 500px;
   display: inline-block;
 }
 
