@@ -470,8 +470,11 @@ table {
   }
   .keyVisual__info__logo {
     display: block;
-    margin-bottom: 5px;
-    height: 20px;
+    margin-bottom: 10px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 30px;
   }
   .keyVisual__info__sub-catch {
     font-size: 18px;
@@ -534,7 +537,7 @@ li {
     display: none;
   }
   .sp-on {
-    display: inline;
+    display: block;
   }
   .menu-tirgger {
     width: 60px;
@@ -708,7 +711,7 @@ li {
 
 @media screen and (max-width: 768px) {
   .c-sectionTitle {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   .c-sectionTitle__ttl {
     width: -webkit-min-content;
@@ -734,6 +737,7 @@ li {
   }
   .c-sectionTitle__ttl--ja {
     display: block;
+    font-size: 14px;
     margin: 10px 0 0 60px;
   }
   .c-btn-large {
@@ -1774,8 +1778,12 @@ li {
     width: fit-content;
     height: 25px;
   }
+  .privacy-top .c-sectionTitle__ttl::after {
+    display: none;
+  }
   .privacy-top .c-sectionTitle__ttl--ja {
     margin: 10px 0 40px 60px;
+    color: #000;
   }
   .privacy-top__txt {
     font-size: 14px;
@@ -1906,14 +1914,12 @@ li {
   padding: 30px 0 25px;
   border-bottom: solid 1px #000000;
   font-size: 14px;
-  line-height: 30px;
 }
 .company-overvew dd {
   width: calc(87.5% - 45px);
   padding: 30px 0 25px 45px;
   border-bottom: solid 1px #E5E5E5;
   font-size: 14px;
-  line-height: 32px;
   text-align: left;
   font-family: Oswald;
   letter-spacing: 0.15em;
@@ -1940,11 +1946,9 @@ li {
   color: #fff;
   padding: 6px;
   margin-bottom: 10px;
-  line-height: 14px;
 }
 .company-overvew p {
   margin-bottom: 25px;
-  line-height: 14px;
 }
 .company-overvew p:last-child {
   margin-bottom: 0px;
@@ -1991,11 +1995,17 @@ li {
 }
 
 @media screen and (max-width: 768px) {
+  .c-sectionTitle__ttl::after {
+    margin-bottom: 30px;
+  }
   .c-pager {
     display: none;
   }
   .c-contact {
     display: none;
+  }
+  .company-message {
+    margin-top: 50px;
   }
   .company-message .c-sectionTitle__ttl::after {
     display: none;
@@ -2039,7 +2049,7 @@ li {
   .company-overvew .c-sectionTitle__ttl::after {
     display: none;
   }
-  .company-overvew .c-sectionTitle__txt {
+  .company-overvew .c-sectionTitle__ttl--ja {
     color: #000;
   }
   .company-overvew .l-section {
@@ -2047,53 +2057,44 @@ li {
     margin: 0 auto;
   }
   .company-overvew dl {
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
+    flex-wrap: nowrap;
   }
   .company-overvew dt {
-    width: 12.5%;
-    padding: 30px 0 25px;
-    border-bottom: solid 1px #000000;
-    font-size: 14px;
-    line-height: 30px;
+    width: auto;
+    padding: 20px 0 15px;
+    border-bottom: none;
+    text-align: left;
   }
   .company-overvew dd {
-    width: calc(87.5% - 45px);
-    padding: 30px 0 25px 45px;
-    border-bottom: solid 1px #E5E5E5;
-    font-size: 14px;
-    line-height: 32px;
+    width: auto;
+    padding: 0px 0 20px 0px;
     text-align: left;
-    font-family: Oswald;
-    letter-spacing: 0.15em;
   }
   .company-overvew dd ul {
-    display: flex;
-    justify-content: left;
+    display: block;
+    justify-content: start;
   }
   .company-overvew dd ul li {
-    padding-right: 25px;
+    padding-right: 0px;
+    padding-bottom: 10px;
   }
   .company-overvew dd ul li:last-child {
     padding-right: 0px;
+    padding-bottom: 0px;
   }
   .company-overvew dt:first-child {
-    padding: 0 0 25px 0px;
+    padding: 20px 0 15px 0px;
+    border-top: solid 1px #E5E5E5;
   }
   .company-overvew dt:first-child + dd {
-    padding: 0 0 25px 45px;
+    padding: 0 0 20px 0px;
   }
   .company-overvew .licence {
-    display: inline-block;
-    background-color: #000;
-    color: #fff;
-    padding: 6px;
-    margin-bottom: 10px;
-    line-height: 14px;
+    padding: 5px;
   }
   .company-overvew p {
-    margin-bottom: 25px;
-    line-height: 14px;
+    margin-bottom: 15px;
   }
   .company-overvew p:last-child {
     margin-bottom: 0px;

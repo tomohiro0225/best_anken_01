@@ -43,8 +43,9 @@
             height: 220px;
             &__logo{
                 display: block;    
-                margin-bottom: 5px;
-                height: 20px;
+                margin-bottom: 10px;
+                width: fit-content;
+                height: 30px;
             }
             &__sub-catch {
                 font-size: 18px;

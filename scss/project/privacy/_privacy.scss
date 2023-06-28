@@ -71,8 +71,12 @@
                     height: 25px;
                 }
             }
+            &__ttl::after{
+                display: none;
+            }
             &__ttl--ja{
                 margin:10px 0 40px 60px;
+                color: #000;
             }
         }
         &__txt{

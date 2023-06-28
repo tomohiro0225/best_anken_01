@@ -147,7 +147,7 @@
 
 @media screen and (max-width:768px) {
     .c-sectionTitle{
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         &__ttl{
             width: min-content;
             height: 30px;
@@ -168,6 +168,7 @@
         }
         &__ttl--ja {
           display: block;
+          font-size: 14px;
             margin: 10px 0 0 60px;
         }
     }
