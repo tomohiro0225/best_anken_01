@@ -654,6 +654,12 @@ li {
   display: inline-block;
 }
 
+.c-contact {
+  position: fixed;
+  top: 420px;
+  right: 0;
+  z-index: 9999;
+}
 .c-contact__item {
   width: 100px;
   height: 100px;
@@ -1824,15 +1830,8 @@ li {
   display: inline-block;
 }
 
-.c-pager {
+.c-pager.company {
   margin-bottom: 50px;
-}
-
-.c-contact {
-  position: fixed;
-  top: 420px;
-  right: 0;
-  z-index: 9999;
 }
 
 .company-message .c-sectionTitle__ttl::before {
@@ -2126,6 +2125,206 @@ li {
   }
   .company-access__btn img {
     margin-right: 10px;
+  }
+}
+.c-sectionTitle__ttl::before {
+  width: 50px;
+}
+.c-sectionTitle__ttl::after {
+  display: inline-block;
+}
+
+.member__anciety {
+  font-family: "Klee One";
+  font-weight: 600;
+  font-size: 28px;
+  letter-spacing: 0.15em;
+  line-height: 48px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 50px;
+}
+.member__dakara {
+  font-family: "Klee One";
+  font-weight: 600;
+  font-size: 48px;
+  letter-spacing: 0.15em;
+  line-height: 48px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 25px;
+}
+.member__actions {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1004px;
+  height: 254px;
+  margin-bottom: 25px;
+  margin: 0 auto;
+}
+.member__action {
+  width: 25%;
+  border: solid 4px #1B1B1D;
+  background-color: #1B1B1D;
+}
+.member__action__img {
+  height: 100px;
+}
+.member__action__img img {
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.member__action__txt {
+  font-family: Oswald;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 33px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 37px;
+}
+.member__action:nth-child(2n) {
+  background-color: #fff;
+}
+.member__next {
+  margin-bottom: 81px;
+}
+.member__next__up {
+  font-family: "Klee One";
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 90px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 11px;
+  display: block;
+}
+.member__next__down {
+  font-family: "Klee One";
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 48px;
+  text-align: center;
+  color: #000;
+  display: block;
+}
+.member__list {
+  display: flex;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-bottom: 100px;
+}
+.member__list__img {
+  width: 46%;
+}
+.member__list__right {
+  width: 54%;
+  padding: 100px 90px 0 96px;
+}
+.member__list__right--white {
+  border: solid 1px #000;
+}
+.member__list__director {
+  font-weight: normal;
+  font-size: 15px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  margin-bottom: 9px;
+}
+.member__list__director--gray {
+  color: #fff;
+}
+.member__list__director--white {
+  color: #000;
+}
+.member__list__name {
+  text-align: left;
+  margin-bottom: 50px;
+}
+.member__list__name--ja {
+  font-weight: bold;
+  font-size: 32px;
+  letter-spacing: 0.1em;
+  text-align: left;
+}
+.member__list__name--ja--gray {
+  color: #fff;
+}
+.member__list__name--ja--white {
+  color: #000;
+}
+.member__list__name--en {
+  font-family: Oswald;
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  text-align: left;
+}
+.member__list__name--en--gray {
+  color: #fff;
+}
+.member__list__name--en--white {
+  color: #000;
+}
+.member__list__about {
+  margin-bottom: 100px;
+  height: 52px;
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  line-height: 28px;
+  text-align: left;
+}
+.member__list__about--gray {
+  color: #fff;
+}
+.member__list__about--white {
+  color: #000;
+}
+.member__list__data {
+  margin-bottom: 8px;
+  font-family: Oswald;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: left;
+}
+.member__list__data--gray {
+  color: #fff;
+}
+.member__list__data--white {
+  color: #000;
+}
+.member__list__likes {
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 0.15em;
+  line-height: 24px;
+  text-align: left;
+}
+.member__list__likes--gray {
+  color: #fff;
+}
+.member__list__likes--white {
+  color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  .c-sectionTitle__ttl::before {
+    width: 50px;
+  }
+  .c-sectionTitle__ttl--ja {
+    color: #fff;
+    margin: 10px 0 20px 60px;
+    width: auto;
+  }
+  .c-contact {
+    position: absolute;
+    top: 420px;
+    right: 0;
   }
 }
 .page-404__title {

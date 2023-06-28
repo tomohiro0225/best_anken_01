@@ -1,0 +1,212 @@
+// conponent
+.c-sectionTitle{
+    &__ttl::before{
+      width: 50px;
+    }
+    &__ttl::after{
+      display: inline-block;
+    }
+}
+
+.member {
+    &__anciety {
+        font-family: "Klee One";
+        font-weight: 600;
+        font-size: 28px;
+        letter-spacing: 0.15em;
+        line-height: 48px;
+        text-align: center;
+        color: #000;
+        margin-bottom: 50px;
+    }
+    &__dakara {
+        font-family: "Klee One";
+        font-weight: 600;
+        font-size: 48px;
+        letter-spacing: 0.15em;
+        line-height: 48px;
+        text-align: center;
+        color: #000;
+        margin-bottom: 25px;
+    }
+    &__actions {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1004px;
+        height: 254px;
+        margin-bottom: 25px;
+        margin: 0 auto;
+    }
+    &__action {
+        width: 25%;
+        border: solid 4px #1B1B1D;
+        background-color: #1B1B1D;
+        &__img {
+            height: 100px;
+            img{
+                height: min-content;
+                width: fit-content;
+            }
+        }
+        &__txt {
+            font-family: Oswald;
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 33px;
+            text-align: center;
+            color: #fff;
+            margin-bottom: 37px;
+        }
+    }
+    &__action:nth-child(2n) {
+        background-color: #fff;
+    }
+    &__next {
+        margin-bottom: 81px;
+        &__up {
+            font-family: "Klee One";
+            font-weight: 600;
+            font-size: 42px;
+            line-height: 90px;
+            text-align: center;
+            color: #000;
+            margin-bottom: 11px;
+            display: block;
+        }
+        &__down {
+            font-family: "Klee One";
+            font-weight: 600;
+            font-size: 38px;
+            line-height: 48px;
+            text-align: center;
+            color: #000;
+            display: block;
+        }
+
+    }
+
+    &__list {
+        display: flex;
+        height: fit-content;
+        margin-bottom: 100px;
+        &__img {
+            width: 46%;
+        }
+        &__right {
+            width: calc(100% - 46%);
+            padding: 100px 90px 0 96px;
+            &--white{
+                border: solid 1px #000;
+            }
+        }
+        &__director {
+            font-weight: normal;
+            font-size: 15px;
+            letter-spacing: 0.1em;
+            text-align: left;
+            margin-bottom: 9px;
+            &--gray{
+                color: #fff;
+            }
+            &--white{
+                color: #000;
+            }
+        }
+        &__name {
+            text-align: left;
+            margin-bottom: 50px;
+            &--ja{
+                font-weight: bold;
+                font-size: 32px;
+                letter-spacing: 0.1em;
+                text-align: left;
+                &--gray{
+                    color: #fff;
+                }
+                &--white{
+                    color: #000;
+                }
+            }
+            &--en{
+                font-family: Oswald;
+                font-weight: normal;
+                font-size: 14px;
+                letter-spacing: 0.1em;
+                text-align: left;
+                &--gray{
+                    color: #fff;
+                }
+                &--white{
+                    color: #000;
+                }
+            }
+        }
+        &__about {
+            margin-bottom: 100px;
+            height: 52px;
+            font-size: 16px;
+            letter-spacing: 0.2em;
+            line-height: 28px;
+            text-align: left;
+            &--gray{
+                color: #fff;
+            }
+            &--white{
+                color: #000;
+            }
+        }
+        &__data {
+            margin-bottom: 8px;
+            font-family: Oswald;
+            font-weight: bold;
+            font-size: 20px;
+            text-align: left;
+            &--gray{
+                color: #fff;
+            }
+            &--white{
+                color: #000;
+            }
+        }
+        &__likes {
+            font-weight: normal;
+            font-size: 16px;
+            letter-spacing: 0.15em;
+            line-height: 24px;
+            text-align: left;
+            &--gray{
+                color: #fff;
+            }
+            &--white{
+                color: #000;
+            }
+        }
+
+    }
+    
+    
+}
+
+
+
+@media screen and (max-width:768px) {
+    // conponent
+    .c-sectionTitle{
+        &__ttl::before{
+        width: 50px;
+        }
+        &__ttl--ja {
+            color: #fff;
+            margin: 10px 0 20px 60px;
+            width: auto;
+        }
+    }
+
+    .c-contact{
+        position: absolute;
+        top: 420px;
+        right: 0;
+    }
+
+
+}

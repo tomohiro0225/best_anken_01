@@ -84,6 +84,10 @@
     }
 }
 .c-contact {
+    position: fixed;
+    top: 420px;
+    right: 0;
+    z-index: 9999;
     &__item {
         width: 100px;
         height: 100px;
