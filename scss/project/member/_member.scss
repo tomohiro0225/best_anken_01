@@ -19,15 +19,25 @@
         color: #000;
         margin-bottom: 50px;
     }
+    &__dakaras{
+        display: flex;
+        margin: 0 0 25px;
+        justify-content: center;
+    }
     &__dakara {
-        font-family: "Klee One";
-        font-weight: 600;
-        font-size: 48px;
-        letter-spacing: 0.15em;
-        line-height: 48px;
-        text-align: center;
-        color: #000;
-        margin-bottom: 25px;
+        img{
+            width: 9px;
+            height: 9px;
+        }
+        p{
+            font-family: "Klee One";
+            font-weight: 600;
+            font-size: 48px;
+            letter-spacing: 0.15em;
+            line-height: 48px;
+            text-align: center;
+            color: #000;
+        }
     }
     &__actions {
         display: flex;
@@ -42,10 +52,11 @@
         border: solid 4px #1B1B1D;
         background-color: #1B1B1D;
         &__img {
-            height: 100px;
+            margin-top: 30px;
             img{
-                height: min-content;
-                width: fit-content;
+                width: 60%;
+                height: 140px;
+                vertical-align: middle;
             }
         }
         &__txt {
@@ -56,9 +67,12 @@
             text-align: center;
             color: #fff;
             margin-bottom: 37px;
+            &--white{
+                color: #000;
+            }
         }
     }
-    &__action:nth-child(2n) {
+    &__action.bg-white {
         background-color: #fff;
     }
     &__next {
@@ -87,14 +101,17 @@
 
     &__list {
         display: flex;
-        height: fit-content;
         margin-bottom: 100px;
         &__img {
             width: 46%;
+            img{
+                width: 100%;
+                height: fit-content;
+            }
         }
         &__right {
             width: calc(100% - 46%);
-            padding: 100px 90px 0 96px;
+            padding: 8% 7.5% 8% 8%;
             &--white{
                 border: solid 1px #000;
             }
@@ -141,9 +158,8 @@
                 }
             }
         }
-        &__about {
+        &__episode {
             margin-bottom: 100px;
-            height: 52px;
             font-size: 16px;
             letter-spacing: 0.2em;
             line-height: 28px;
@@ -156,18 +172,39 @@
             }
         }
         &__data {
-            margin-bottom: 8px;
+            margin-bottom:8px;
             font-family: Oswald;
             font-weight: bold;
             font-size: 20px;
             text-align: left;
+            width: fit-content;
             &--gray{
                 color: #fff;
+                display: flex;
+                height: 20px;
             }
+            &--gray::before{
+                background: #fff;
+              }
             &--white{
                 color: #000;
+                display: flex;
+                height: 20px;
             }
+            &--white::before{
+                background: #000000;
+              }
         }
+        &__data::before{
+            content: '';
+            flex-grow: 1;
+            height: 1px;
+            display: block;
+            width: 20px;
+            position: relative;
+            top: 50%;
+            margin-right:10px;
+          }
         &__likes {
             font-weight: normal;
             font-size: 16px;
@@ -208,5 +245,113 @@
         right: 0;
     }
 
+    .member {
+        &__anciety {
+            font-size: 18px;
+            line-height: 38px;
+            margin-bottom: 30px;
+            margin-top: 50px;
+        }
+        &__dakaras{
+            margin: 0 0 20px;
+            justify-content: center;
+        }
+        &__dakara {
+            img{
+                width: 6px;
+                height: 6px;
+            }
+            p{
+                font-size: 30px;
+                line-height: 31px;
+            }
+        }
+        &__actions {
+            width: 320px;
+            height: fit-content;    
+            margin: 0 auto 20px;
+            flex-wrap: wrap;
+        }
+        &__action {
+            width: calc(50% - 4px);
+            height: fit-content;
+            border: solid 2px #1B1B1D;
+            &__img {
+                margin-top: 20px;
+                img{   
+                    width: 60%;
+                    height: 80px;
+                }
+            }
+            &__txt {
+                font-size: 20px;
+                color: #fff;
+                margin-bottom: 20px;
+                margin-top: 10px;
+                &--white{
+                    color: #000;
+                }
+            }
+        }
+        &__action.bg-white {
+            background-color: #fff;
+        }
+        &__next {
+            margin-bottom: 60px;
+            &__up {
+                font-size: 22px;
+                line-height: 30px;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+            &__down {
+                font-size: 16px;
+                line-height: 16px;
+            }
+    
+        }
+    
+        &__list {
+            display: block;
+            margin-bottom: 30px;
+            &__img {
+                width: auto;
+            }
+            &__right {
+                width: auto;
+                padding: 20px;
+            }
+            &__director {
+                font-size: 14px;
+                margin-bottom: 15px;
+            }
+            &__name {
+                margin-bottom: 20px;
+                &--ja{
+                    font-size: 25px;
+                }
+            }
+            &__data {
+                margin-bottom:10px;
+                font-size: 18px;
+            }
+            &__data::before{
+                width: 20px;
+                margin-right:10px;
+              }
+            &__episode {
+                margin-bottom: 20px;
+                font-size: 14px;
+                letter-spacing: 0.1em;
+            }
+            &__likes {
+                font-size: 14px;
+                letter-spacing: 0.1em;
+            }
+    
+        }
+        
+        
+    }
 
 }

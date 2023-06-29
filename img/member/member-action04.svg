@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="81.384" height="150.425" viewBox="0 0 81.384 150.425">
+  <g id="グループ_1760" data-name="グループ 1760" transform="translate(2.5 3.37)">
+    <path id="パス_98" data-name="パス 98" d="M8266,813.6c0,7.3,2.608,19.813,10.949,29.458,8.341-10.167,12.513-21.373,12.513-29.458" transform="translate(-8239.149 -713.233)" fill="#fff" stroke="#000" stroke-width="5"/>
+    <path id="パス_97" data-name="パス 97" d="M8283.062,764.2c4.44,0,13.817.261,24.285,10.428s14.037,24.762,14.037,33.89v20.073H8245V808.518C8245,785.311,8262.723,764.2,8283.062,764.2Z" transform="translate(-8245 -728.224)" fill="#fff" stroke="#000" stroke-width="5"/>
+    <path id="パス_96" data-name="パス 96" d="M8256.646,836.967V789.782c0-10.952,6.518-38.843,23.723-53.182,15.9,15.642,21.68,32.323,22.942,53.182s0,47.185,0,47.185h-46.665Z" transform="translate(-8242.05 -736.6)" fill="#fff" stroke="#000" stroke-width="5"/>
+    <g id="楕円形_4" data-name="楕円形 4" transform="translate(28.019 30.737)" fill="#fff" stroke="#000" stroke-width="5">
+      <circle cx="10.442" cy="10.442" r="10.442" stroke="none"/>
+      <circle cx="10.442" cy="10.442" r="7.942" fill="none"/>
+    </g>
+    <g id="楕円形_5" data-name="楕円形 5" transform="translate(28.019 62.613)" fill="#fff" stroke="#000" stroke-width="5">
+      <circle cx="10.442" cy="10.442" r="10.442" stroke="none"/>
+      <circle cx="10.442" cy="10.442" r="7.942" fill="none"/>
+    </g>
+    <line id="線_54" data-name="線 54" y2="16.945" transform="translate(20.985 123.699)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="5"/>
+    <line id="線_55" data-name="線 55" y2="14.338" transform="translate(52.269 130.216)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="5"/>
+    <line id="線_56" data-name="線 56" y2="21.507" transform="translate(61.824 109.361)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="5"/>
+  </g>
+</svg>
