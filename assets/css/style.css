@@ -2310,10 +2310,11 @@ li {
   display: block;
   font-size: 16px;
 }
-.contactForm__item dd input, .contactForm__item dd textarea {
+.contactForm__item dd input {
   width: 100%;
 }
 .contactForm__item dd textarea {
+  width: calc(100% - 40px);
   padding: 23px 20px 0;
   height: 140px;
 }
@@ -2372,7 +2373,7 @@ li {
   color: #707070;
 }
 .contactForm__privacy {
-  margin: 40px 0 16px;
+  margin: 50px 0;
   line-height: 1.5;
   color: #707070;
 }
@@ -2422,17 +2423,6 @@ li {
   background: #fff;
 }
 
-@media screen and (max-width: 599px) {
-  /* セクション */
-  .cp-section {
-    padding: 40px 0;
-  }
-  /* コンテナー */
-  .cp-container {
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-}
 @media screen and (max-width: 768px) {
   .c-sectionTitle__ttl::before {
     width: 50px;

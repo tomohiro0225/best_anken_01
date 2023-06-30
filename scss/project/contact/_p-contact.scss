@@ -202,10 +202,11 @@
                 display: block;
                 font-size: 16px;
             } 
-            input ,textarea{
+            input{
                 width: 100%;
             } 
             textarea{
+                width: calc(100% - 40px);
                 padding: 23px 20px 0;
                 height: 140px;
             } 
@@ -270,7 +271,7 @@
     }
     
     &__privacy {
-        margin: 40px 0 16px;
+        margin: 50px 0;
         line-height: 1.5;
         color: #707070;
         &__container{
@@ -323,20 +324,6 @@
         background: #fff;
     }
 }
-
-@media screen and (max-width: 599px) {
-    /* セクション */
-    .cp-section {
-        padding: 40px 0;
-    }
-    
-    /* コンテナー */
-    .cp-container {
-        padding-right: 15px;
-        padding-left: 15px;
-    }
-}
-
 
 
 
