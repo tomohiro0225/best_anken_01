@@ -65,17 +65,216 @@
     </div>
     <!-- /pager -->
 
-    <!-- 404 -->
-    <section class="page-404 l-section">
-      <h2 class="page-404__title">お探しのページが見つかりませんでした。</h2>
-      <p class="page-404__txt">申し訳ありません。<br>
-        お探しのページは見つかりませんでした。<br>
-        URLを確認しもう一度探してみてください。</p>
-        <div class="c-btn-large">
-          <a href="#"><img src="/img/common/icon-home-black.png" alt="home"><span>RETURN TO HOME</span></a>
+    <!-- contact -->
+    <section class="p-contact">
+      <ul class="p-contact__lists">
+        <li class="p-contact__list">
+            <div class="p-contact__list__logo">
+              <img src="/img/contact/phone.png" alt="p-contact-img">
+            </div>
+            <div class="p-contact__list__logo-line"></div>
+            <div class="p-contact__list__text">
+              <p class="p-contact__list__text__tel font">06-6721-3452</p>
+              <p class="p-contact__list__text__time font">9:00～18:00</p>
+              <p class="p-contact__list__text__time">（土・日・祝は休業日）</p>
+            </div>
+        </li>
+        <li class="p-contact__list">
+            <div class="p-contact__list__logo">
+              <img src="/img/contact/mail.png" alt="p-contact-img">
+            </div>
+            <div class="p-contact__list__logo-line"></div>
+            <p class="p-contact__list__mail">メールでのお問合わせ</p>
+        </li>
+    </ul>
+    
+    <div class="p-contact__caution">
+      <div class="p-contact__caution__logo">
+        <img src="/img/contact/caution.png" alt="caution">
+      </div>
+      <ul class="p-contact__caution__txts">
+        <li class="p-contact__caution__txt">
+          <p>土日祝日にお送りをいただいたお問合せに関しましては、翌営業日以降（平日）の対応となります。<br>
+            また、お問合せ内容により、返信に数日いただく場合がございます。あらかじめご了承ください。</p>
+        </li>
+        <li class="p-contact__caution__txt">
+          <p>携帯などでドメイン指定受信の設定をされている方は「○○○○@○○.jp」からのメールが受信拒否されないよう、ご設定をお願いいたします。</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- /contact -->
+
+
+  <!-- flow -->
+    <ol class="flow">
+      <li class="flow__item">
+        <div class="flow__item__wrapper page-now">
+          <h3 class="flow__item__title page-now font">Step 1</h3>
+          <h3 class="flow__item__action page-now">入力</h3>
         </div>
-    </section>
-    <!-- /404 -->
+      </li>
+      <li class="flow__item">
+        <div class="flow__item__wrapper">
+          <h3 class="flow__item__title font">Step 2</h3>
+          <h3 class="flow__item__action">確認</h3>
+        </div>
+      </li>
+      <li class="flow__item">
+        <div class="flow__item__wrapper">
+          <h3 class="flow__item__title font">Step 3</h3>
+          <h3 class="flow__item__action">完了</h3>
+        </div>
+      </li>
+    </ol>
+  <!-- /flow -->
+
+<!-- contact -->   
+<secton class="l-section">
+
+    <form class="contactForm">
+        <ul class="contactForm__items">
+
+          <!-- アイテム 都道府県 -->
+          <li class="contactForm__item">
+              <dl>
+                  <dt class="contactForm__title">
+                    <span class="contactForm__label contactForm__label-danger">必須</span>
+                    <span class="contactForm__title--name">お問い合わせ種別</span>
+                  </dt>
+                  <dd>
+                      <select class="cp-riset-select">
+                          <option disabled selected style="display: none;">お選びください</option>
+                          <option>新築住宅について</option>
+                          <option>建て替えについて</option>
+                          <option>リフォーム・リノベーションについて</option>
+                          <option>設備空調ソリューションについて</option>
+                          <option>住宅設備の修理・修繕について</option>
+                          <option>求人について</option>
+                          <option>その他</option>
+                      </select>
+                  </dd>
+              </dl>
+          </li><!-- /アイテム 都道府県 -->
+
+            <!-- アイテム 会社名 -->
+            <li class="contactForm__item">
+                <dl>
+                    <dt class="contactForm__title">
+                      <span class="contactForm__label">任意</span>
+                      <span class="contactForm__title--name">会社名 </span>
+                    </dt>
+                    <dd>
+                        <input type="text">
+                    </dd>
+                </dl>
+            </li><!-- /アイテム 会社名 -->
+
+            <!-- アイテム お名前 -->
+            <li class="contactForm__item">
+                <dl>
+                    <dt class="contactForm__title">
+                      <span class="contactForm__label contactForm__label-danger">必須</span>
+                      <span class="contactForm__title--name">お名前 </span>
+                    </dt>
+                    <dd class="contactForm__item__name">
+                        <input class="contactForm__item__name--input" type="text">
+                        <input class="contactForm__item__name--input" type="text">
+                    </dd>
+                </dl>
+            </li><!-- /アイテム お名前 -->
+
+            <!-- アイテム お名前(カナ) -->
+            <li class="contactForm__item">
+                <dl>
+                    <dt class="contactForm__title">
+                      <span class="contactForm__label contactForm__label-danger">必須</span>
+                      <span class="contactForm__title--name">お名前(カナ) </span>
+                    </dt>
+                    <dd class="contactForm__item__name">
+                        <input class="contactForm__item__name--input" type="text">
+                        <input class="contactForm__item__name--input" type="text">
+                    </dd>
+                </dl>
+            </li><!-- /アイテム お名前(カナ) -->
+
+            <!-- アイテム メールアドレス -->
+            <li class="contactForm__item">
+                <dl>
+                    <dt class="contactForm__title">
+                      <span class="contactForm__label contactForm__label-danger">必須</span>
+                      <span class="contactForm__title--name">メールアドレス </span>
+                    </dt>
+                    <dd>
+                        <input type="text">
+                    </dd>
+                </dl>
+            </li><!-- /アイテム メールアドレス -->
+            
+            <!-- アイテム メールアドレス(確認) -->
+            <li class="contactForm__item">
+                <dl>
+                    <dt class="contactForm__title">
+                      <span class="contactForm__label contactForm__label-danger">必須</span>
+                      <span class="contactForm__title--name">メールアドレス(確認) </span>
+                    </dt>
+                    <dd>
+                        <input type="text">
+                    </dd>
+                </dl>
+            </li><!-- /アイテム メールアドレス(確認) -->
+
+            <!-- アイテム 電話番号 -->
+            <li class="contactForm__item">
+                <dl>
+                    <dt class="contactForm__title">
+                      <span class="contactForm__label">任意</span>
+                      <span class="contactForm__title--name">電話番号 </span>
+                    </dt>
+                    <dd class="contactForm__item__tel">
+                        <input  class="contactForm__item__tel--input" type="text">
+                        <div class="contactForm__item__tel--line"></div>
+                        <input  class="contactForm__item__tel--input" type="text">
+                        <div class="contactForm__item__tel--line"></div>
+                        <input  class="contactForm__item__tel--input" type="text">
+                    </dd>
+                </dl>
+            </li><!-- /アイテム 電話番号 -->
+
+            <!-- アイテム お問合せ内容 -->
+            <li class="contactForm__item">
+                <dl>
+                    <dt class="contactForm__title">
+                      <span class="contactForm__label contactForm__label-danger">必須</span>
+                      <span class="contactForm__title--name">お問合せ内容</span>
+                    </dt>
+                    <dd  class="contactForm__item__inquiry">
+                      <textarea  class="contactForm__item__inquiry--textarea" rows="3" placeholder="お問合せ内容を入力してください"></textarea>
+                    </dd>
+                </dl>
+            </li><!-- /アイテム お問合せ内容 -->
+
+        </ul>
+
+        <!-- プライバシーポリシー同意 -->
+        <div class="contactForm__privacy">
+          <div class="contactForm__privacy__container">
+            <p class="contactForm__privacy__txt" >※個人情報に関する基本方針については<a target="_blank" href="#">個人情報保護方針</a>のページをご参照ください。</p>
+              <label>
+                <span class="contactForm__label contactForm__label-danger">必須</span>
+                <input class="check" type="checkbox" name="check-name">
+                <span class="doui">「個人情報保護方針」に同意する</span>
+              </label>
+            </div><!-- /プライバシーポリシー同意 -->
+          </div>
+        
+        <!-- ボタン -->
+            <input class="contactForm--submit" type="button" value="入力内容を確認する">
+            <!-- /ボタン -->
+        
+    </form>
+</secton>
+<!-- /contact -->
 
     <!-- menu-modal -->
     <div class="modal">
