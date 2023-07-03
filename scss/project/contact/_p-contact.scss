@@ -8,7 +8,7 @@
     }
 }
 
-.p-contact {
+.contact-info {
     margin-bottom: 100px;
     // contact
     &__lists {
@@ -163,6 +163,17 @@
 .contactForm {
     width: 1000px;
     margin: 0 auto;
+
+    //誤りがないかの確認文
+    &__before{
+        font-weight: normal;
+        font-size: 16px;
+        letter-spacing: 0.15em;
+        line-height: 28px;
+        text-align: center;
+        color: #000;
+        margin-bottom: 50px;
+    }
     
     /* ラベル */
     &__label {
@@ -286,10 +297,11 @@
             color: #000;
             margin-bottom:21px;
         }
-        label{
+        &__check{
             display: block;
             margin: 0 auto;
-            .check{
+            height: 33px;
+            .check-bo{
                 display: inline-block;
                 margin-right: 10px;
             }
