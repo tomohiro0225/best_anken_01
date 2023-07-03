@@ -83,9 +83,9 @@
             width: calc(100% - 7.2%);
         }
         &__txt {
-            border-bottom: solid #1B1B1D 2px;  
+            border-bottom: dotted #1B1B1D 2px;  
             p{
-                padding: 33px;font-weight: normal;
+                padding: 33px;
                 font-size: 16px;
                 letter-spacing: 0.15em;
                 line-height: 24px;
@@ -161,30 +161,61 @@
 
 
 @media screen and (max-width:768px) {
-    // conponent
-    .c-sectionTitle{
-        &__ttl::before{
-        width: 50px;
+    .contact-info {
+        margin: 0 auto;
+        // contact
+        &__lists {
+            width: 100%;
+            margin: 50px auto;
         }
-        &__ttl::after{
-        width: 500px;
-        display: inline-block;
+        &__list {
+            margin-bottom: 50px;
+            &__text__tel {
+                font-size: 30px;
+                line-height: 45px;
+                margin-bottom: 10px;
+            }
+            &__text__time {
+                margin-bottom: 10px;
+            }
         }
-        &__ttl::after{
-        width: 500px;
-        display: inline-block;
+        
+        // caution
+        &__caution {
+            padding: 0;
+            width: calc(100% - 40px);
+            border: solid #1B1B1D 2px;  
+            &__logo {
+                width: 15%;
+                img{
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+            
+            &__txts {
+                width: calc(100% - 15%);
+            }
+            &__txt {
+                p{
+                    padding: 15px;
+                    font-size: 14px;
+                    line-height: 21px;
+                    
+                }
+            }
+            &__txt:last-child {
+                border-bottom: none; 
+            }
+    
         }
-        &__ttl--ja {
-            color: #fff;
-            margin: 10px 0 20px 60px;
-            width: auto;
-        }
+        
+       
     }
 
-    .c-contact{
-        position: absolute;
-        top: 420px;
-        right: 0;
+     //フロー
+ .flow {
+    margin: 50px auto;
     }
 
 }
