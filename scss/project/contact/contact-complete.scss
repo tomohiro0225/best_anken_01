@@ -1,0 +1,41 @@
+/* お問合せ完了 ------------------------------*/
+.contact-complete {
+    max-width: 1000px;
+    margin: 0 auto 100px;
+    padding: 0 20px;
+
+    /* 見出し */
+    &__title {
+        font-weight: bold;
+        font-size: 28px;
+        letter-spacing: 0.15em;
+        line-height: 44px;
+        text-align: center;
+        color: #000;
+        margin-bottom: 50px;
+    }
+    
+    /* 確認後、再度お問い合わせ */
+    &__txt {
+        font-size: 16px;
+        letter-spacing: 0.15em;
+        line-height: 28px;
+        text-align: center;
+        color: #000;
+        margin-bottom: 50px;
+    }
+}
+
+
+
+@media screen and (max-width: 599px) {
+    /* 見出し */
+    .cp-contactComplete01__title {
+        font-size: 18px;
+    }
+    
+    /* 電話番号 */
+    .cp-contactComplete01__number {
+        font-size: 24px;
+    }
+}

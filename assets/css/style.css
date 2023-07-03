@@ -2548,6 +2548,42 @@ li {
   background-color: #000;
 }
 
+/* お問合せ完了 ------------------------------*/
+.contact-complete {
+  max-width: 1000px;
+  margin: 0 auto 100px;
+  padding: 0 20px;
+  /* 見出し */
+  /* 確認後、再度お問い合わせ */
+}
+.contact-complete__title {
+  font-weight: bold;
+  font-size: 28px;
+  letter-spacing: 0.15em;
+  line-height: 44px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 50px;
+}
+.contact-complete__txt {
+  font-size: 16px;
+  letter-spacing: 0.15em;
+  line-height: 28px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 599px) {
+  /* 見出し */
+  .cp-contactComplete01__title {
+    font-size: 18px;
+  }
+  /* 電話番号 */
+  .cp-contactComplete01__number {
+    font-size: 24px;
+  }
+}
 .c-sectionTitle__ttl::before {
   width: 50px;
 }
@@ -2899,11 +2935,6 @@ li {
   line-height: 28px;
   text-align: center;
   color: #000;
-}
-.page-404 .c-btn-large img {
-  width: 16px;
-  height: 18px;
-  margin-right: 10px;
 }
 
 @media screen and (max-width: 499px) {
