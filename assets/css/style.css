@@ -2517,16 +2517,20 @@ li {
   }
   .contact-form__item dd input {
     width: calc(100% - 24px);
-    padding: 5px 10px;
+    padding: 20px 10px;
   }
   .contact-form__item dd textarea {
     padding: 5px 10px;
     height: 140px;
     width: calc(100% - 20px);
   }
+  .contact-form__item dd select {
+    max-width: 100%;
+    width: 335px;
+  }
   .contact-form__item__name--input {
-    width: calc(50% - 10px);
-    margin-right: 20px;
+    width: calc(50% - 5px);
+    margin-right: 10px;
   }
   .contact-form__item__tel {
     display: flex;
@@ -2695,33 +2699,40 @@ li {
     /* アイテム */
   }
   .contact-confirm__table {
-    border: none;
+    border: solid 2px #8A8A8A;
+    display: block;
+    padding: 20px;
   }
   .contact-confirm__item {
     display: block;
-    border: 2px solid #1B1B1D;
+    border: none;
     margin-bottom: 20px;
   }
   .contact-confirm__item:last-child {
-    border-bottom: 2px solid #1B1B1D;
+    border-bottom: none;
     margin-bottom: 0px;
   }
-  .contact-confirm__item:last-child .contact-confirm__title,
-.contact-confirm__item:last-child .contact-confirm__text {
-    padding: 20px;
+  .contact-confirm__item:last-child .contact-confirm__title {
+    padding: 0 0 20px;
+  }
+  .contact-confirm__item:last-child .contact-confirm__text {
+    padding: 0 0 0px;
   }
   .contact-confirm__title, .contact-confirm__text {
     display: block;
-    padding: 20px;
+    padding: 0 0 20px 0;
   }
   .contact-confirm__title {
     width: auto;
     font-size: 16px;
+    background-color: #fff;
+    color: #000;
   }
   .contact-confirm__text {
     width: auto;
     font-size: 16px;
     line-height: 28px;
+    color: #000;
   }
   .contact-confirm__button:not(:last-child) {
     margin-right: 30px;

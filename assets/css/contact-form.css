@@ -204,16 +204,20 @@
   }
   .contact-form__item dd input {
     width: calc(100% - 24px);
-    padding: 5px 10px;
+    padding: 20px 10px;
   }
   .contact-form__item dd textarea {
     padding: 5px 10px;
     height: 140px;
     width: calc(100% - 20px);
   }
+  .contact-form__item dd select {
+    max-width: 100%;
+    width: 335px;
+  }
   .contact-form__item__name--input {
-    width: calc(50% - 10px);
-    margin-right: 20px;
+    width: calc(50% - 5px);
+    margin-right: 10px;
   }
   .contact-form__item__tel {
     display: flex;
