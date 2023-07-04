@@ -88,6 +88,8 @@
         display: inline-block;
     }
 }
+
+// contact-btn
 .c-contact {
     position: fixed;
     top: 420px;
@@ -127,8 +129,41 @@
     }
 }
 
-//pager
-.c-pager{
+// pager
+.c-pager {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+  &__Item:not(:last-child) {
+   margin-right: 10px;
+  }
+  &__Item-Link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 45px;
+    height: 45px;
+    background: #fff;
+    border: solid 2px #111;
+    font-size: 14px;
+    color: #111;
+    font-weight: bold;
+    transition: all 0.15s linear;
+  }
+  &__Item-Link.isActive {
+    background: #111;
+    color: #fff;
+    pointer-events: none;
+  }
+  &__Item-Link:not(.isActive):hover {
+    background: #111;
+    color: #fff;
+  }
+}
+
+//breadcrumb
+.c-breadcrumb{
     margin-top: 25px;
     &__lists {
         margin: 0 auto;

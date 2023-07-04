@@ -1,0 +1,289 @@
+//キーワード
+.keywords {
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 50px auto 0;
+    &__title {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        &--en{
+            font-weight: bold;
+            font-size: 38px;
+            text-align: left;
+            color: #000;
+            margin-right: 10px;
+             }
+        &--ja{
+            font-weight: bold;
+            font-size: 14px;
+            letter-spacing: 0.15em;
+            text-align: left;
+            color: #000;
+            margin-right: 6px;
+            }
+        &--line{
+            content: '';
+            flex-grow: 1;
+            height: 1px;
+            background: #707070;
+            display: block;
+            }
+    }
+    &__list {
+        display: flex;
+        justify-content: left;
+        margin: 27px 0 44px 50px;
+        position: relative;
+    }
+    &__item {
+    
+        /* ボタン */
+        &--button {
+            display: inline-block;
+            padding: 10px 15px;
+            font-size: 14px;
+            line-height: 17px;
+            transition: .2s ease-in-out;
+            margin-right: 30px;
+            color: #000;
+            cursor: pointer;
+        }
+        &--button:hover {
+            color: #fff;
+            background: #000;
+        }
+    }
+    &__more{
+        font-size: 20px;
+        padding: 15px;
+        border: solid 2px #000;
+        position: absolute;
+        top: 50%;
+        right: -2%;
+        transform: translate(-50%, -50%);
+    }
+
+}
+
+.l-section.work{
+    margin-top: 75px;
+}
+
+/* 実績紹介 ------------------------------*/
+.works {
+    display: flex;
+    flex-wrap: wrap;
+
+    /* アイテム */
+    &__item {
+        width: calc(100% / 3 - 32px / 3);
+    }
+    &__item:not(:nth-child(3n)) {
+        margin-right: 16px;
+    }
+    &__item:nth-child(n+4) {
+        margin-top: 50px;
+    }
+    &__item a {
+        display: block;
+        transition: .2s ease-in-out;
+        text-decoration: none;
+    }
+    &__item a:hover {
+        opacity: 0.7;
+    }
+    
+    /* 画像 */
+    &__image img {
+        width: 100%;
+        margin-bottom: 23px;
+    }
+    
+    /* タイトル */
+    &__title {
+        font-weight: normal;
+        font-size: 18px;
+        letter-spacing: 0.05em;
+        text-align: left;
+        color: #000;
+        margin-bottom: 20px;
+    }
+    
+    /* テキスト */
+    &__text {
+        font-weight: normal;
+        font-size: 14px;
+        letter-spacing: 0.1em;
+        line-height: 24px;
+        text-align: left;
+        color: #000;
+        margin-bottom: 23px;
+    }
+    
+    /* ラベル */
+    &__labels{
+        display: flex;
+        justify-content: left;
+    }
+    &__label {
+        margin-right: 15px;
+        display: block;
+        padding: 10px;
+        font-weight: normal;
+        font-size: 12px;
+        letter-spacing: 0.1em;
+        text-align: left;
+        color: #000;
+        border: solid 1px #000000;
+    }
+    &__label:last-child {
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .works {
+        display: flex;
+        flex-wrap: wrap;
+    
+        /* アイテム */
+        &__item {
+            width: calc(100% / 3 - 32px / 3);
+        }
+        &__item:not(:nth-child(3n)) {
+            margin-right: 16px;
+        }
+        &__item:nth-child(n+4) {
+            margin-top: 50px;
+        }
+        &__item a {
+            display: block;
+            transition: .2s ease-in-out;
+            text-decoration: none;
+        }
+        &__item a:hover {
+            opacity: 0.7;
+        }
+        
+        /* 画像 */
+        &__image img {
+            width: 100%;
+            margin-bottom: 23px;
+        }
+        
+        /* タイトル */
+        &__title {
+            font-weight: normal;
+            font-size: 18px;
+            letter-spacing: 0.05em;
+            text-align: left;
+            color: #000;
+            margin-bottom: 20px;
+        }
+        
+        /* テキスト */
+        &__text {
+            font-weight: normal;
+            font-size: 14px;
+            letter-spacing: 0.1em;
+            line-height: 24px;
+            text-align: left;
+            color: #000;
+            margin-bottom: 23px;
+        }
+        
+        /* ラベル */
+        &__labels{
+            display: flex;
+            justify-content: left;
+        }
+        &__label {
+            margin-right: 15px;
+            display: block;
+            padding: 10px;
+            font-weight: normal;
+            font-size: 12px;
+            letter-spacing: 0.1em;
+            text-align: left;
+            color: #000;
+            border: solid 1px #000000;
+        }
+        &__label:last-child {
+            margin-right: 0px;
+        }
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .works {
+        display: flex;
+        flex-wrap: wrap;
+    
+        /* アイテム */
+        &__item {
+            width: calc(100% / 3 - 32px / 3);
+        }
+        &__item:not(:nth-child(3n)) {
+            margin-right: 16px;
+        }
+        &__item:nth-child(n+4) {
+            margin-top: 50px;
+        }
+        &__item a {
+            display: block;
+            transition: .2s ease-in-out;
+            text-decoration: none;
+        }
+        &__item a:hover {
+            opacity: 0.7;
+        }
+        
+        /* 画像 */
+        &__image img {
+            width: 100%;
+            margin-bottom: 23px;
+        }
+        
+        /* タイトル */
+        &__title {
+            font-weight: normal;
+            font-size: 18px;
+            letter-spacing: 0.05em;
+            text-align: left;
+            color: #000;
+            margin-bottom: 20px;
+        }
+        
+        /* テキスト */
+        &__text {
+            font-weight: normal;
+            font-size: 14px;
+            letter-spacing: 0.1em;
+            line-height: 24px;
+            text-align: left;
+            color: #000;
+            margin-bottom: 23px;
+        }
+        
+        /* ラベル */
+        &__labels{
+            display: flex;
+            justify-content: left;
+        }
+        &__label {
+            margin-right: 15px;
+            display: block;
+            padding: 10px;
+            font-weight: normal;
+            font-size: 12px;
+            letter-spacing: 0.1em;
+            text-align: left;
+            color: #000;
+            border: solid 1px #000000;
+        }
+        &__label:last-child {
+            margin-right: 0px;
+        }
+    }
+}
