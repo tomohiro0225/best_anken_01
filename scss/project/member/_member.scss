@@ -1,13 +1,3 @@
-// conponent
-.c-sectionTitle{
-    &__ttl::before{
-      width: 50px;
-    }
-    &__ttl::after{
-      display: inline-block;
-    }
-}
-
 .member {
     &__anciety {
         font-family: "Klee One";

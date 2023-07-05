@@ -1,0 +1,322 @@
+.company{
+    // 代表のメッセージ
+    &-message {
+        .c-sectionTitle__ttl::before {
+        background-color: #fff;
+        }
+        .c-sectionTitle__ttl::after {
+        display: block;
+        content: "代表のメッセージ";
+        color: #fff;
+        }
+        .l-section{
+            padding: 115px 20px 100px;
+            margin: 0 auto;
+        }
+        &__contain {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__img {
+            width: calc(100% * 0.39 - 4% / 2);
+            margin-right: 4%;
+            img{
+                height: fit-content;
+            }
+        }
+        &__right {
+            width: calc(100% * 0.61 -  4% / 2);
+        }
+        &__title {
+            font-family: Oswald;
+            font-weight: bold;
+            font-size: 25px;
+            letter-spacing: 0.1em;
+            line-height: 38px;
+            text-align: left;
+            color: #fff;
+            margin-bottom: 24px;
+        }
+        &__txt {
+            font-weight: normal;
+            font-size: 16px;
+            letter-spacing: 0.2em;
+            line-height: 28px;
+            text-align: left;
+            color: #fff;
+            margin-bottom: 9px;
+        }
+        &__name {
+            font-weight: normal;
+            font-size: 20px;
+            text-align: right;
+            color: #fff;
+        }
+        
+        
+    }
+
+    // 会社概要
+    &-overvew {
+        .c-sectionTitle__ttl::before {
+        background-color: #000;
+        }
+        .c-sectionTitle__ttl::after {
+        display: block;
+        content: "会社概要";
+        color: #000;
+        }
+        .c-sectionTitle__txt {
+        color: #000;
+        }
+        .l-section{
+            padding: 115px 20px 75px;
+            margin: 0 auto;
+        }
+        dl{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        dt{
+            width: calc(100% / 8);
+            padding: 30px 0 25px;
+            border-bottom: solid 1px #000000;
+            font-size: 14px;
+        }
+        dd{
+            width: calc(100% / 8 * 7 - 45px);
+            padding: 30px 0 25px 45px;
+            border-bottom: solid 1px #E5E5E5;
+            font-size: 14px;
+            text-align: left;
+            font-family: Oswald;
+            letter-spacing: 0.15em;
+            ul{
+                display: flex;
+                justify-content: left;
+                li{
+                    padding-right: 25px;
+                }
+                li:last-child{
+                    padding-right: 0px;
+                }
+            }
+        }
+        dt:first-child{
+            padding: 0 0 25px 0px;
+        }
+        dt:first-child + dd{
+            padding: 0 0 25px 45px;
+        }
+        .licence{
+            display: inline-block;
+            background-color: #000;
+            color: #fff;
+            padding: 6px;
+            margin-bottom: 10px;
+        }
+        p{
+            margin-bottom: 25px;
+        }
+        p:last-child{
+            margin-bottom: 0px;
+        }
+    }
+
+    // アクセス
+    &-access {
+        .c-sectionTitle__ttl::before {
+        background-color: #fff;
+        }
+        .c-sectionTitle__ttl::after {
+        display: block;
+        content: "アクセス";
+        color: #fff;
+        }
+        .l-section{
+            padding: 65px 20px 50px;
+            margin: 0 auto;
+        }
+        &__map{
+            margin-bottom: 50px;
+        }
+        &__contain{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__address{
+            font-weight: normal;
+            font-size: 14px;
+            letter-spacing: 0.15em;
+            line-height: 24px;
+            text-align: left;
+            color: #fff;
+            width: max-content;
+        }
+        &__btn{
+            margin: 0;
+            font-size: 20px;
+            color: #000;
+            img{
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+    
+    
+}
+
+@media screen and (max-width:768px) {
+
+    // conponent
+    .c-sectionTitle__ttl::after {
+        margin-bottom: 30px;
+    }
+    .c-pager{
+        display: none;
+    }
+    .c-contact{
+        display: none;
+    }
+
+    .company{
+        // 代表のメッセージ
+        &-message {
+            margin-top: 50px;
+            .c-sectionTitle__ttl::after {
+                display: none;
+            }
+            .l-section{
+                padding: 50px 20px;
+                margin: 0 auto;
+            }
+            &__contain {
+                display: block;
+                justify-content: start;
+            }
+            &__img {
+                width: auto;
+                margin-right: 0%;
+                margin-bottom: 20px;
+                img{
+                    height: fit-content;
+                }
+            }
+            &__right {
+                width: auto;
+            }
+            &__title {
+                font-size: 20px;
+                line-height: 30px;
+                margin-bottom: 00px;
+                padding-bottom: 20px;
+                text-align: left;
+            }
+            &__txt {
+                letter-spacing: 0.15em;
+                margin-bottom: 10px;
+            }
+            &__name {
+                font-size: 18px;
+                text-align: right;
+            }
+            
+            
+        }
+    
+        // 会社概要
+        &-overvew {
+            .c-sectionTitle__ttl::after {
+                display: none;
+            }
+            .c-sectionTitle__ttl--ja {
+            color: #000;
+            }
+            .l-section{
+                padding: 115px 20px 75px;
+                margin: 0 auto;
+            }
+            dl{
+                display: block;
+                flex-wrap: nowrap;
+            }
+            dt{
+                width: auto;
+                padding: 20px 0 15px;
+                border-bottom: none;
+                text-align: left;
+            }
+            dd{
+                width: auto;
+                padding: 0px 0 20px 0px;
+                text-align: left;
+                ul{
+                    display: block;
+                    justify-content: start;
+                    li{
+                        padding-right: 0px;
+                        padding-bottom: 10px;
+                    }
+                    li:last-child{
+                        padding-right: 0px;
+                        padding-bottom: 0px;
+                    }
+                }
+            }
+            dt:first-child{
+                padding: 20px 0 15px 0px;
+                border-top: solid 1px #E5E5E5;
+            }
+            dt:first-child + dd{
+                padding: 0 0 20px 0px;
+            }
+            .licence{
+                padding: 5px;
+            }
+            p{
+                margin-bottom: 15px;
+            }
+            p:last-child{
+                margin-bottom: 0px;
+            }
+        }
+    
+        // アクセス
+        &-access {
+            .c-sectionTitle{
+                padding: 0 20px;
+            }
+            .c-sectionTitle__ttl::after {
+                display: none;
+            }
+            .l-section{
+                padding: 50px 00px;
+                margin: 0 auto 50px;
+            }
+            &__map{
+                margin-bottom: 20px;
+            }
+            &__contain{
+                display:block;
+                justify-content: start;
+                padding: 0 20px;
+            }
+            &__address{
+                width: auto;
+                margin-bottom: 30px;
+            }
+            &__btn{
+                font-size: 18px;
+                margin: 0 auto;
+                padding: 10px 20px;
+                img{
+                    margin-right: 10px;
+                }
+            }
+        }
+        
+        
+    }
+}

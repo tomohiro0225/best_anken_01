@@ -1,10 +1,7 @@
 // conponent
-.c-sectionTitle{
+.c-sectionTitle.service-title{
     &__ttl::before{
       width: 50px;
-    }
-    &__ttl::after{
-      display: inline-block;
     }
 }
 
@@ -262,14 +259,6 @@
 .c-sectionTitle{
     &__ttl::before{
       width: 50px;
-    }
-    &__ttl::after{
-      width: 500px;
-      display: inline-block;
-    }
-    &__ttl::after{
-      width: 500px;
-      display: inline-block;
     }
     &__ttl--ja {
         color: #fff;

@@ -1,4 +1,7 @@
 .member{
+  .l-section{
+    padding: 100px 20px 50px;
+  }
     .c-sectionTitle{
         &__ttl::before{
           content: '';
@@ -16,7 +19,6 @@
       margin: 0 auto 0;
       width:94%;
       height: 400px;
-      padding-bottom: 50px;
       img {
         width:20vw;
         height:max-content;
@@ -35,7 +37,9 @@
         height: 350px;
       }
     }
-    
+    .c-btn{
+      padding-bottom: 50px;
+    }
     
 }
 

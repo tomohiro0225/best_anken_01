@@ -1,0 +1,267 @@
+// 実績紹介
+.works-detail {
+    margin-top: 50px;
+        // 実績紹介上部
+        &__content-up {
+            max-width: 1200px;
+            padding: 0 20px;
+            margin: 0 auto;
+        }
+        &__date {
+            height: 30px; 
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            &--new {
+                font-weight: bold;
+                font-size: 16px;
+                letter-spacing: 0.05em;
+                text-align: left;
+                color: #fff;
+                padding: 7px 12px;
+                background-color: black;
+                display: block;
+                margin-right: 10px
+            }
+            &--icon {
+                width: 14px;
+                height: 14px;
+                display: block;
+                margin-right: 5px
+            }
+            &--date {
+                font-weight: normal;
+                font-size: 14px;
+                letter-spacing: 0.1em;
+                text-align: left;
+                color: #000;
+                display: block;
+                margin-right: 4px
+            }
+        }
+        &__visitor {
+            font-size: 16px;
+            letter-spacing: 0.05em;
+            text-align: left;
+            color: #000;
+            margin-bottom: 10px;
+        }
+        &__name {
+            font-weight: bold;
+            font-size: 32px;
+            letter-spacing: 0.1em;
+            text-align: left;
+            color: #000;   
+            margin-bottom: 20px;
+        }
+        &__img {
+            img{
+                width: fit-content;
+                height: 600px;
+                display: block;
+                margin: 50px auto;
+            }
+        }
+
+        // 実績紹介データ
+        &__content-down {
+            padding: 50px 20px;
+            &__inner{
+                display: flex;
+                justify-content: space-between;
+                max-width: 1000px;
+                margin: 0 auto;
+            }
+        }
+        &__data {
+            width: 38%;
+            &__title {
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                &--en {
+                    font-weight: bold;
+                    font-size: 32px;
+                    text-align: left;
+                    color: #fff;
+                    margin-right: 10px;
+                }
+                &--ja {
+                    font-weight: bold;
+                    font-size: 14px;
+                    letter-spacing: 0.15em;
+                    text-align: left;
+                    color: #fff;
+                    margin-right: 6px;
+                }
+                &--line {
+                    content: '';
+                    flex-grow: 1;
+                    height: 1px;
+                    background: #fff;
+                    display: block;
+                }
+            }
+            dl{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                margin:23px 0 44px 0;
+                dt{
+                    width: calc(100% / 6);
+                    margin-bottom: 22px;
+                    font-size: 16px;
+                    letter-spacing: 0.1em;
+                    text-align: left;
+                    color: #fff;
+                    
+                }
+                dd{
+                    width: calc(100% / 6 * 5 - 21px);
+                    margin-bottom: 22px;
+                    font-size: 16px;
+                    letter-spacing: 0.1em;
+                    text-align: left;
+                    color: #fff;
+                }
+                dt:last-child,dt:last-child+dd{
+                    margin-bottom: 0px;
+                }
+            }
+        }
+        &__txt {
+            width: 56%;
+            font-size: 16px;
+            letter-spacing: 0.2em;
+            line-height: 32px;
+            text-align: left;
+            color: #fff;
+        }
+}
+
+
+
+
+
+// ビフォーアフター
+.before-after{
+    .c-sectionTitle{
+        margin-bottom: 30px;
+        &__ttl{
+            img:not(:first-child){
+                padding:0 15px 0 0;
+            }
+            img:nth-child(2n){
+                height: 26px;
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        &__ttl::after{
+            content: 'ビフォーアフター';
+        }
+    }   
+
+    // フロー
+    &__inner {
+        width: fit-content;
+      }
+      
+      &__flow {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        margin-bottom: 25px;
+      }
+      
+      &__before, &__after {
+        position: relative;
+        width: calc(50% - 99px);
+      }
+      
+      &__before img, &__after img {
+        width: 100%;
+      }
+      
+      &__before span, &__after span {
+        position: absolute;
+        top: -34px;
+        left: 15px;
+        font-size: 34px;
+        font-weight: bold;
+        font-style: italic;
+        color: #74787b;
+        font-family: "Noto Serif JP", "游明朝", " Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
+      }
+      
+      &__after span {
+        color: #1b87d8;
+      }
+      
+      &__arrow {
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+        img{
+            width: 53px;
+            height: 56px;
+        }
+      }
+
+      &__info{
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+
+      &__title{
+        font-weight: bold;
+        font-size: 20px;
+        letter-spacing: 0.15em;
+        text-align: left;
+        color: #000;
+        margin-bottom: 25px;
+      }
+
+      &__txt{
+        margin-bottom: 25px;
+        font-weight: normal;
+        font-size: 16px;
+        letter-spacing: 0.2em;
+        line-height: 32px;
+        text-align: left;
+        color: #000;
+        
+      }
+      &__txt:last-child{
+        margin-bottom: 0px;
+      }
+}
+
+// ギャラリー
+.gallery{
+
+    .c-sectionTitle{
+        margin-bottom: 25px;
+        &__ttl::after{
+            content: 'ギャラリー';
+        }
+    }   
+
+    /* コンテンツ */
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__item {
+        width: calc(100% / 3 - 60px / 3);
+        margin-right: 30px;
+    }
+    &__item:nth-child(3n) {
+        margin-right: 0px;
+    }
+    &__item:nth-child(n+4) {
+        margin-top: 30px;
+    }
+}
