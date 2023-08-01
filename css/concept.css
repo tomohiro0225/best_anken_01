@@ -1,35 +1,35 @@
-.info {
-  margin: 130px auto 0;
+.concept-first {
+  margin: 50px auto 100px;
   background-image: url(../img/concept/fv-jigyosho.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right bottom;
 }
-.info__top {
+.concept-first__top {
   height: 0;
 }
-.info__wrapper {
+.concept-first__wrapper {
   max-width: 1200px;
-  padding: 108px 15px;
+  padding: 50px 15px 154px;
   text-align: left;
   margin: 0 auto;
 }
-.info__jewelry {
+.concept-first__info {
   display: inline-block;
   margin-bottom: 83px;
   background-color: rgba(255, 255, 255, 0.5);
   padding: 11px 10px;
 }
-.info__jewelry__img {
+.concept-first__info__img {
   display: inline-block;
 }
-.info__jewelry img {
+.concept-first__info img {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   height: 58px;
 }
-.info__catch {
+.concept-first__catch {
   font-family: "BIZ UDPGothic";
   font-weight: bold;
   font-size: 62px;
@@ -38,15 +38,15 @@
   color: #000;
   margin-left: 10px;
 }
-.info__texts-pc {
+.concept-first__texts-pc {
   display: flex;
   justify-content: left;
   flex-flow: column;
 }
-.info__texts-sp {
+.concept-first__texts-sp {
   display: none;
 }
-.info__buy {
+.concept-first__buy {
   display: inline-block;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -62,19 +62,69 @@
   background-color: rgba(255, 255, 255, 0.5);
   padding: 8px;
 }
+.concept-action {
+  padding: 100px 0;
+}
+.concept-action__wrapper {
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto 57px;
+}
+.concept-action__wrapper:last-child {
+  margin: 0 auto;
+}
+.concept-action__title {
+  text-align: left;
+  margin-bottom: 20px;
+}
+.concept-action__title--logo {
+  margin-bottom: 10px;
+}
+.concept-action__title--logo img {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 30px;
+}
+.concept-action__title--ja {
+  font-family: "BIZ UDPGothic";
+  font-weight: normal;
+  font-size: 18px;
+  color: #fff;
+}
+.concept-action__text {
+  text-align: left;
+  margin-left: 186px;
+}
+.concept-action__text--ttl {
+  font-family: "BIZ UDPGothic";
+  font-weight: normal;
+  font-size: 35px;
+  text-align: left;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.concept-action__text--txt {
+  font-family: "BIZ UDPGothic";
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: left;
+  color: #fff;
+}
 
 @media screen and (max-width: 767px) {
-  .info {
+  .concept-first {
     background-image: none;
-    margin: 50px auto 0;
+    margin: 50px auto 60px;
   }
-  .info__wrapper {
+  .concept-first__wrapper {
     max-width: 1000px;
     text-align: left;
     margin: 0 auto;
     padding: 0;
   }
-  .info__jewelry {
+  .concept-first__info {
     margin-bottom: 30px;
     padding: 45px 0;
     display: flex;
@@ -86,34 +136,66 @@
     background-size: cover;
     background-position: right bottom;
   }
-  .info__jewelry__img {
+  .concept-first__info__img {
     display: block;
     padding: 10px 20px;
     background-color: rgba(255, 255, 255, 0.7);
   }
-  .info__jewelry img {
+  .concept-first__info img {
     height: 35px;
   }
-  .info__catch {
+  .concept-first__catch {
     display: block;
     font-size: 25px;
     margin-left: 0px;
     padding: 0px 20px 10px;
     background-color: rgba(255, 255, 255, 0.7);
   }
-  .info__texts-pc {
+  .concept-first__texts-pc {
     display: none;
   }
-  .info__texts-sp {
+  .concept-first__texts-sp {
     display: block;
   }
-  .info__buy {
+  .concept-first__buy {
     display: block;
     font-size: 16px;
     text-align: left;
     line-height: 28px;
     margin-bottom: 38px;
     padding: 0px 20px;
+  }
+  .concept-action {
+    padding: 50px 0;
+  }
+  .concept-action__wrapper {
+    margin: 0 auto 40px;
+  }
+  .concept-action__title {
+    text-align: left;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: last baseline;
+  }
+  .concept-action__title--logo {
+    margin-bottom: 0px;
+    margin-right: 20px;
+  }
+  .concept-action__title--logo img {
+    height: 25px;
+  }
+  .concept-action__title--ja {
+    font-size: 18px;
+  }
+  .concept-action__text {
+    text-align: left;
+    margin-left: 0px;
+  }
+  .concept-action__text--ttl {
+    font-size: 20px;
+    text-align: left;
+    color: #fff;
+    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=concept.css.map */
