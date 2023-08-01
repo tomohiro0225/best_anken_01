@@ -1,0 +1,119 @@
+.info {
+  margin: 130px auto 0;
+  background-image: url(../img/concept/fv-jigyosho.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right bottom;
+}
+.info__top {
+  height: 0;
+}
+.info__wrapper {
+  max-width: 1200px;
+  padding: 108px 15px;
+  text-align: left;
+  margin: 0 auto;
+}
+.info__jewelry {
+  display: inline-block;
+  margin-bottom: 83px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 11px 10px;
+}
+.info__jewelry__img {
+  display: inline-block;
+}
+.info__jewelry img {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 58px;
+}
+.info__catch {
+  font-family: "BIZ UDPGothic";
+  font-weight: bold;
+  font-size: 62px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #000;
+  margin-left: 10px;
+}
+.info__texts-pc {
+  display: flex;
+  justify-content: left;
+  flex-flow: column;
+}
+.info__texts-sp {
+  display: none;
+}
+.info__buy {
+  display: inline-block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: "BIZ UDPGothic";
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  line-height: 28px;
+  text-align: left;
+  color: #000;
+  margin-bottom: 16px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .info {
+    background-image: none;
+    margin: 50px auto 0;
+  }
+  .info__wrapper {
+    max-width: 1000px;
+    text-align: left;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .info__jewelry {
+    margin-bottom: 30px;
+    padding: 45px 0;
+    display: flex;
+    justify-content: left;
+    flex-flow: column;
+    text-align: left;
+    background-image: url(../img/concept/fv-jigyosho.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right bottom;
+  }
+  .info__jewelry__img {
+    display: block;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  .info__jewelry img {
+    height: 35px;
+  }
+  .info__catch {
+    display: block;
+    font-size: 25px;
+    margin-left: 0px;
+    padding: 0px 20px 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  .info__texts-pc {
+    display: none;
+  }
+  .info__texts-sp {
+    display: block;
+  }
+  .info__buy {
+    display: block;
+    font-size: 16px;
+    text-align: left;
+    line-height: 28px;
+    margin-bottom: 38px;
+    padding: 0px 20px;
+  }
+}
+/*# sourceMappingURL=concept.css.map */
