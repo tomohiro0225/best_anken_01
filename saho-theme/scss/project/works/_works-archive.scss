@@ -143,147 +143,55 @@
 }
 
 @media screen and (max-width: 768px) {
-    .works {
-        display: flex;
+    //キーワード
+.keywords {
+    &__list {
         flex-wrap: wrap;
-    
-        /* アイテム */
-        &__item {
-            width: calc(100% / 3 - 32px / 3);
-        }
-        &__item:not(:nth-child(3n)) {
-            margin-right: 16px;
-        }
-        &__item:nth-child(n+4) {
-            margin-top: 50px;
-        }
-        &__item a {
-            display: block;
-            transition: .2s ease-in-out;
-            text-decoration: none;
-        }
-        &__item a:hover {
-            opacity: 0.7;
-        }
-        
-        /* 画像 */
-        &__image img {
-            width: 100%;
-            margin-bottom: 23px;
-        }
-        
-        /* タイトル */
-        &__title {
-            font-weight: normal;
-            font-size: 18px;
-            letter-spacing: 0.05em;
-            text-align: left;
-            color: #000;
-            margin-bottom: 20px;
-        }
-        
-        /* テキスト */
-        &__text {
-            font-weight: normal;
-            font-size: 14px;
-            letter-spacing: 0.1em;
-            line-height: 24px;
-            text-align: left;
-            color: #000;
-            margin-bottom: 23px;
-        }
-        
-        /* ラベル */
-        &__labels{
-            display: flex;
-            justify-content: left;
-        }
-        &__label {
-            margin-right: 15px;
-            display: block;
-            padding: 10px;
-            font-weight: normal;
-            font-size: 12px;
-            letter-spacing: 0.1em;
-            text-align: left;
-            color: #000;
-            border: solid 1px #000000;
-        }
-        &__label:last-child {
+        margin: 27px auto 50px;
+    }
+    &__item {
+        width: 33%;
+        /* ボタン */
+        &--button {
             margin-right: 0px;
+        }
+        &--button:nth-child(2n) {
+            margin-left: 20px;
         }
     }
+    &__more{
+        padding: 10px;
+        position: absolute;
+        top: 100%;
+        transform: translate(-50%, -50%);
+    }
+
 }
 
-@media screen and (max-width: 499px) {
+.l-section.work{
+    margin-top: 50px;
+}
     .works {
-        display: flex;
-        flex-wrap: wrap;
+        display: block;
+        flex-wrap: nowrap;
     
         /* アイテム */
         &__item {
-            width: calc(100% / 3 - 32px / 3);
+            width: auto;
         }
         &__item:not(:nth-child(3n)) {
-            margin-right: 16px;
+            margin-right: 0px;
         }
         &__item:nth-child(n+4) {
-            margin-top: 50px;
+            margin-top: 0px;
+        }
+        &__item:not(:first-child) {
+            margin-top: 30px;
         }
         &__item a {
             display: block;
             transition: .2s ease-in-out;
             text-decoration: none;
-        }
-        &__item a:hover {
-            opacity: 0.7;
-        }
-        
-        /* 画像 */
-        &__image img {
-            width: 100%;
-            margin-bottom: 23px;
-        }
-        
-        /* タイトル */
-        &__title {
-            font-weight: normal;
-            font-size: 18px;
-            letter-spacing: 0.05em;
-            text-align: left;
-            color: #000;
-            margin-bottom: 20px;
-        }
-        
-        /* テキスト */
-        &__text {
-            font-weight: normal;
-            font-size: 14px;
-            letter-spacing: 0.1em;
-            line-height: 24px;
-            text-align: left;
-            color: #000;
-            margin-bottom: 23px;
-        }
-        
-        /* ラベル */
-        &__labels{
-            display: flex;
-            justify-content: left;
-        }
-        &__label {
-            margin-right: 15px;
-            display: block;
-            padding: 10px;
-            font-weight: normal;
-            font-size: 12px;
-            letter-spacing: 0.1em;
-            text-align: left;
-            color: #000;
-            border: solid 1px #000000;
-        }
-        &__label:last-child {
-            margin-right: 0px;
         }
     }
 }

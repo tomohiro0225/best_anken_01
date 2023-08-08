@@ -2020,137 +2020,50 @@ li {
 }
 
 @media screen and (max-width: 768px) {
-  .works {
-    display: flex;
+  .keywords__list {
     flex-wrap: wrap;
+    margin: 27px auto 50px;
+  }
+  .keywords__item {
+    width: 33%;
+    /* ボタン */
+  }
+  .keywords__item--button {
+    margin-right: 0px;
+  }
+  .keywords__item--button:nth-child(2n) {
+    margin-left: 20px;
+  }
+  .keywords__more {
+    padding: 10px;
+    position: absolute;
+    top: 100%;
+    transform: translate(-50%, -50%);
+  }
+  .l-section.work {
+    margin-top: 50px;
+  }
+  .works {
+    display: block;
+    flex-wrap: nowrap;
     /* アイテム */
-    /* 画像 */
-    /* タイトル */
-    /* テキスト */
-    /* ラベル */
   }
   .works__item {
-    width: calc(33.3333333333% - 10.6666666667px);
+    width: auto;
   }
   .works__item:not(:nth-child(3n)) {
-    margin-right: 16px;
+    margin-right: 0px;
   }
   .works__item:nth-child(n+4) {
-    margin-top: 50px;
+    margin-top: 0px;
+  }
+  .works__item:not(:first-child) {
+    margin-top: 30px;
   }
   .works__item a {
     display: block;
     transition: 0.2s ease-in-out;
     text-decoration: none;
-  }
-  .works__item a:hover {
-    opacity: 0.7;
-  }
-  .works__image img {
-    width: 100%;
-    margin-bottom: 23px;
-  }
-  .works__title {
-    font-weight: normal;
-    font-size: 18px;
-    letter-spacing: 0.05em;
-    text-align: left;
-    color: #000;
-    margin-bottom: 20px;
-  }
-  .works__text {
-    font-weight: normal;
-    font-size: 14px;
-    letter-spacing: 0.1em;
-    line-height: 24px;
-    text-align: left;
-    color: #000;
-    margin-bottom: 23px;
-  }
-  .works__labels {
-    display: flex;
-    justify-content: left;
-  }
-  .works__label {
-    margin-right: 15px;
-    display: block;
-    padding: 10px;
-    font-weight: normal;
-    font-size: 12px;
-    letter-spacing: 0.1em;
-    text-align: left;
-    color: #000;
-    border: solid 1px #000000;
-  }
-  .works__label:last-child {
-    margin-right: 0px;
-  }
-}
-@media screen and (max-width: 499px) {
-  .works {
-    display: flex;
-    flex-wrap: wrap;
-    /* アイテム */
-    /* 画像 */
-    /* タイトル */
-    /* テキスト */
-    /* ラベル */
-  }
-  .works__item {
-    width: calc(33.3333333333% - 10.6666666667px);
-  }
-  .works__item:not(:nth-child(3n)) {
-    margin-right: 16px;
-  }
-  .works__item:nth-child(n+4) {
-    margin-top: 50px;
-  }
-  .works__item a {
-    display: block;
-    transition: 0.2s ease-in-out;
-    text-decoration: none;
-  }
-  .works__item a:hover {
-    opacity: 0.7;
-  }
-  .works__image img {
-    width: 100%;
-    margin-bottom: 23px;
-  }
-  .works__title {
-    font-weight: normal;
-    font-size: 18px;
-    letter-spacing: 0.05em;
-    text-align: left;
-    color: #000;
-    margin-bottom: 20px;
-  }
-  .works__text {
-    font-weight: normal;
-    font-size: 14px;
-    letter-spacing: 0.1em;
-    line-height: 24px;
-    text-align: left;
-    color: #000;
-    margin-bottom: 23px;
-  }
-  .works__labels {
-    display: flex;
-    justify-content: left;
-  }
-  .works__label {
-    margin-right: 15px;
-    display: block;
-    padding: 10px;
-    font-weight: normal;
-    font-size: 12px;
-    letter-spacing: 0.1em;
-    text-align: left;
-    color: #000;
-    border: solid 1px #000000;
-  }
-  .works__label:last-child {
-    margin-right: 0px;
   }
 }
 .works-detail {
@@ -2212,7 +2125,7 @@ li {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  height: 600px;
+  height: auto;
   display: block;
   margin: 50px auto;
 }
@@ -2308,6 +2221,7 @@ li {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  margin: 0 auto;
 }
 .before-after__flow {
   display: flex;
@@ -2394,6 +2308,117 @@ li {
   margin-top: 30px;
 }
 
+@media screen and (max-width: 768px) {
+  .works-detail {
+    margin-top: 50px;
+  }
+  .works-detail__date {
+    height: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  .works-detail__img img {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .works-detail__name {
+    font-size: 24px;
+  }
+  .works-detail__content-down {
+    padding: 50px 20px;
+  }
+  .works-detail__content-down__inner {
+    display: block;
+  }
+  .works-detail__data {
+    width: auto;
+    margin-bottom: 30px;
+  }
+  .works-detail__data__title--line {
+    margin-bottom: 0px;
+  }
+  .works-detail__data dl {
+    display: flex;
+    margin: 23px 0 0px 0;
+  }
+  .works-detail__data dl dt:last-child, .works-detail__data dl dt:last-child + dd {
+    margin-bottom: 0px;
+  }
+  .works-detail__txt {
+    width: auto;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .before-after .c-sectionTitle {
+    margin-bottom: 30px;
+  }
+  .before-after .c-sectionTitle__ttl img:not(:last-child) {
+    padding: 0 10px 0 0;
+  }
+  .before-after .c-sectionTitle__ttl img:nth-child(2n) {
+    height: 20px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .before-after .c-sectionTitle__ttl--ja {
+    color: #000;
+  }
+  .before-after .c-sectionTitle__ttl::before {
+    width: 0;
+  }
+  .before-after__inner {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  .before-after__before, .before-after__after {
+    width: calc(50% - 30px);
+  }
+  .before-after__after span {
+    color: #1b87d8;
+  }
+  .before-after__arrow img {
+    width: 27px;
+    height: 28px;
+  }
+  .before-after__info {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .before-after__title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .before-after__txt {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .before-after__txt:last-child {
+    margin-bottom: 0px;
+  }
+  .gallery {
+    /* コンテンツ */
+  }
+  .gallery__items {
+    display: block;
+  }
+  .gallery__item {
+    width: auto;
+    margin-right: 0px;
+  }
+  .gallery__item:nth-child(n+4) {
+    margin-top: 0px;
+  }
+  .gallery__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
 .company-message .c-sectionTitle__ttl::before {
   background-color: #fff;
 }

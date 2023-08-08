@@ -57,7 +57,7 @@
         &__img {
             img{
                 width: fit-content;
-                height: 600px;
+                height: auto;
                 display: block;
                 margin: 50px auto;
             }
@@ -166,6 +166,7 @@
     // フロー
     &__inner {
         width: fit-content;
+        margin: 0 auto;
       }
       
       &__flow {
@@ -264,4 +265,145 @@
     &__item:nth-child(n+4) {
         margin-top: 30px;
     }
+}
+
+@media screen and (max-width:768px) {
+
+    // 実績紹介
+.works-detail {
+    margin-top: 50px;
+        // 実績紹介上部
+        &__date {
+            height: 30px; 
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        &__img {
+            img{
+                width: 100%;
+                height: fit-content;
+            }
+        }
+        &__name{
+            font-size: 24px;
+        }
+
+        // 実績紹介データ
+        &__content-down {
+            padding: 50px 20px;
+            &__inner{
+                display: block;
+            }
+        }
+        &__data {
+            width: auto;
+            margin-bottom: 30px;
+            &__title {
+                &--line {
+                    margin-bottom: 0px;
+                }
+            }
+            dl{
+                display: flex;
+                margin:23px 0 0px 0;
+                dt:last-child,dt:last-child+dd{
+                    margin-bottom: 0px;
+                }
+            }
+        }
+        &__txt {
+            width: auto;
+            font-size: 16px;
+            line-height: 24px;
+        }
+}
+
+
+
+
+
+// ビフォーアフター
+.before-after{
+    .c-sectionTitle{
+        margin-bottom: 30px;
+        &__ttl{
+            img:not(:last-child){
+                padding:0 10px 0 0;
+            }
+            img:nth-child(2n){
+                height: 20px;
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            &--ja{
+                color: #000;
+            }
+        }
+        &__ttl::before{
+            width: 0;
+        }
+    }   
+
+    // フロー
+    &__inner {
+        width: fit-content;
+        margin: 0 auto;
+      }
+      
+      &__before, &__after {
+        width: calc(50% - 30px);
+      }
+      
+      &__after span {
+        color: #1b87d8;
+      }
+      
+      &__arrow {
+        img{
+            width: 27px;
+            height: 28px;
+        }
+      }
+
+      &__info{
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+
+      &__title{
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+
+      &__txt{
+        margin-bottom: 20px;
+        font-size: 14px;
+        line-height: 21px;
+      }
+      &__txt:last-child{
+        margin-bottom: 0px;
+      }
+}
+
+// ギャラリー
+.gallery{
+
+    /* コンテンツ */
+    &__items {
+        display: block;
+    }
+    &__item {
+        width: auto;
+        margin-right: 00px;
+    }
+    &__item:nth-child(n+4) {
+        margin-top: 00px;
+    }
+    &__item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
 }
