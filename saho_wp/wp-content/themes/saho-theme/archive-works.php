@@ -112,7 +112,7 @@
         <?php while (have_posts()) : the_post(); ?>
             <!-- アイテム -->
             <li class="works__item">
-                <a href="<?php the_permalink(); ?>">?>
+                <a href="<?php the_permalink(); ?>">
 
                     <!-- 画像 -->
                     <figure class="works__image">
@@ -146,26 +146,7 @@
     <!-- /contents -->  
 
     <!-- pager -->
-    <ul class="c-pager">
-      <li class="c-pager__Item">
-          <a class="c-pager__Item-Link" href="/pages/1/"><span><</span></a>
-      </li>
-      <li class="c-pager__Item">
-          <a class="c-pager__Item-Link" href="/pages/1/"><span>1</span></a>
-      </li>
-      <li class="c-pager__Item">
-          <a class="c-pager__Item-Link isActive" href="/pages/2/"><span>2</span></a>
-      </li>
-      <li class="c-pager__Item">
-          <a class="c-pager__Item-Link" href="/pages/3/"><span>3</span></a>
-      </li>
-      <li class="c-pager__Item">
-          <a class="c-pager__Item-Link" href="/pages/4/"><span>4</span></a>
-      </li>
-      <li class="c-pager__Item">
-          <a class="c-pager__Item-Link" href="/pages/5/"><span>></span></a>
-      </li>
-    </ul>    
+    <?php get_template_part('_inc/pager'); ?>
     <!-- /pager -->
 
     <!-- contact -->

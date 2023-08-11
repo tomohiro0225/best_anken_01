@@ -1,5 +1,5 @@
 $('.slider').slick({
-    autoplay: false,
+    autoplay: true,
     dots: false,
     arrows:false,
     centerMode: true,
