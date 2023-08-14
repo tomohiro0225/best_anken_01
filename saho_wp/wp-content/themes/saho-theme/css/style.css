@@ -2003,6 +2003,7 @@ li {
 .works__labels {
   display: flex;
   justify-content: left;
+  flex-wrap: wrap;
 }
 .works__label {
   margin-right: 15px;
@@ -2014,9 +2015,13 @@ li {
   text-align: left;
   color: #000;
   border: solid 1px #000000;
+  margin-top: 10px;
 }
 .works__label:last-child {
   margin-right: 0px;
+}
+.works__label a{
+  color: #000;
 }
 
 @media screen and (max-width: 768px) {

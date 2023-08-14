@@ -60,9 +60,7 @@
         <p class="works-detail__visitor"><?php echo get_field('works_client'); ?></p>
         <h2 class="works-detail__name">Rビル業務用エアコン更新工事</h2>
         <div class="works__labels">
-          <span class="works__label">平屋</span>
-          <span class="works__label">ハーフ収納</span>
-          <span class="works__label">テレワーク</span>
+          <?php the_tags('<div class="works__label">','</div><div class="works__label">','</div>'); ?>
         </div>
         <div class="works-detail__img">
                 <img src="<?php echo get_field('works_img'); ?>" alt="<?php echo the_title(); ?>">

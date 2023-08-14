@@ -73,9 +73,18 @@
     <!-- contents -->
     <div class="l-section work">
         <ul class="works">
-
-        <?php if (have_posts()) : ?>
-        <?php while (have_posts()) : the_post(); ?>
+            <?php 
+              $tag = get_queried_object();
+              $args = array(
+                'tag' => $tag->slug,
+                'post_type' => 'works',//ポストタイプのスラッグ
+                'order' => 'DESC',//並び順、DESCは最新ジュン
+                'posts_per_page' => -1//何件表示するか？
+                );
+              $my_query = new WP_Query($args);//my_queryにargsを入れている
+              if($my_query->have_posts()) :
+              while ($my_query->have_posts()) : $my_query->the_post();
+            ?>
             <!-- アイテム -->
             <li class="works__item">
                 <a href="<?php the_permalink(); ?>">
@@ -102,7 +111,7 @@
                 </a>
             </li><!-- /アイテム -->
             
-        <?php endwhile; endif; ?>
+          <?php endwhile; endif; ?>
             
 
         </ul>
